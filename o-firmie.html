@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O firmie - Wimax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+
+body {
+            padding-top: 56px; 
+            font-family: 'Lato', serif, sans-serif;
+            background-color: #214468;
+            color: white; 
+            background: repeating-radial-gradient(circle, #214468, #193653 20%, #193653 35%);
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color: #193653; /* Ciemny niebieski kolor */
+        }
+
+        .footer {
+            background-color: #193653; /* Ciemny niebieski kolor */
+            color: white; /* Biały kolor czcionki */
+            transition: background-color 0.7s, color 0.7s;
+        }
+
+        .footer:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+  .footer a:hover {
+    color: #d3cacc; /* Kolor po najechaniu myszką */
+  }
+
+        .navbar-brand img {
+            max-height: 50px; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #d6dee6; /* Jasnoszary kolor tekstu */
+        }
+
+        .header-responsive {
+    font-size: 3vw; /* Możesz dostosować wielkość czcionki według potrzeb */
+}
+
+        .jumbotron {
+    position: relative;
+    overflow: hidden;
+    background: none;
+    margin-bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3); /* Mniejsze przyciemnienie */
+    text-align: center;
+  }
+
+  .overlay h1, .overlay h2 {
+    color: white;
+    font-weight: 500;
+    text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.9);
+    margin: 10px 0;
+    transition: background 0.5s ease;
+  }
+
+  .overlay h1 {
+    background: rgba(0, 0, 0, 0.1); /* Mniejsze tło */
+    padding: 10px; /* Mniejsze wypełnienie */
+    border-radius: 5px;
+  }
+
+  .overlay h2 {
+    background: rgba(0, 0, 0, 0.1); /* Mniejsze tło */
+    padding: 10px; /* Mniejsze wypełnienie */
+    border-radius: 5px;
+  }
+
+  .overlay h1:hover, .overlay h2:hover {
+    background: rgba(0, 0, 0, 0.2); /* Zwiększenie tła przy hover */
+  }
+
+.jumbotron h1 {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.jumbotron h2 {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f8f9fa;  /* bardzo jasny szary kolor czcionki */
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Zresetuj marginesy i paddingi dla wszystkich elementów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.navbar-nav .nav-link {
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+    h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+h3 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+h5 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+    .quote-container {
+        background-color: #193653;
+        border-left: 5px solid #eeeaea;
+        padding: 10px 20px;
+        margin: 20px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.7s ease;
+        display: inline-block;
+    }
+
+    .btn-primary {
+        background-color: #193653; /* Domyślne tło przycisku - niebieskie */
+        border-color: #0e1e2e; /* Domyślne obramowanie przycisku - niebieskie */
+        color: white !important; /* Domyślny kolor tekstu na przycisku */
+        transition: background-color 0.7s ease, border-color 0.7s ease; /* Dodajemy efekt przejścia */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .btn-primary:hover {
+        background-color: transparent !important; /* Tło przycisku staje się przezroczyste po najechaniu kursorem */
+        border-color: #0e1e2e; /* Obramowanie przycisku staje się przezroczyste po najechaniu kursorem */
+    }
+
+    /* Stylowanie tekstu przycisku po najechaniu */
+    .btn-primary:hover span {
+        color: #007bff !important; /* Kolor tekstu po najechaniu - niebieski */
+    }
+
+    p a {
+    color: white; /* Kolor linków */
+    transition: color 0.7s; /* Płynne przejście koloru */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    font-size: 20px;
+}
+
+p a:hover {
+    color: lightgray; /* Nowy kolor po najechaniu myszką */
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.5s; /* Płynne przejście koloru tekstu */
+}
+
+/* Efekt hover na linkach */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff; /* Kolor tekstu po najechaniu myszką */
+}
+
+/* Stylowanie dropdownów */
+.dropdown-menu {
+    display: none; /* Ukrywanie menu dropdown */
+    transition: opacity 0.5s, transform 0.5s; /* Płynne przejście */
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Pokazywanie dropdownu po najechaniu myszką */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efekt hover na pozycjach w dropdownie */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; /* Zmiana koloru tła */
+    color: #212529; /* Zmiana koloru tekstu */
+}
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.5s; /* Płynne przejście koloru tekstu */
+}
+
+/* Efekt hover na linkach */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff; /* Kolor tekstu po najechaniu myszką */
+}
+
+/* Stylowanie dropdownów */
+.dropdown-menu {
+    display: none; /* Ukrywanie menu dropdown */
+    transition: opacity 0.5s, transform 0.5s; /* Płynne przejście */
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Pokazywanie dropdownu po najechaniu myszką */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efekt hover na pozycjach w dropdownie */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa; /* Zmiana koloru tła */
+    color: #212529; /* Zmiana koloru tekstu */
+}
+
+.img-container {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  p {
+  text-align: justify;
+}
+
+.slider-container {
+        position: relative;
+        width: 50%;
+        margin: auto;
+    }
+    .slides {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .slide {
+        display: none;
+        width: 100%;
+    }
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .dot.active {
+        background-color: #717171;
+    }
+
+
+@media (max-width: 768px) {
+  /* Zmiany dla mniejszych ekranów */
+  .footer img {
+    max-width: 150px; /* Dostosowanie maksymalnej szerokości obrazka dla mniejszych ekranów */
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px; /* Dodaj odstęp od logo firmy */
+  }
+
+  .header-responsive {
+    font-size: 34px; /* Dostosowanie rozmiaru czcionki */
+    padding: 0px; /* Dostosowanie wewnętrznego odstępu */
+    text-align: center;
+  }
+
+  .jumbotron h1 {
+    font-size: 22px; /* Nowy rozmiar czcionki dla nagłówka */
+  }
+
+  h2.responsive-font {
+      font-size: 12px; /* Dostosuj rozmiar czcionki na mniejszych ekranach */
+    }
+
+  .jumbotron .btn-custom {
+    font-size: 12px; /* Nowy rozmiar czcionki dla przycisku */
+  }
+
+  .jumbotron img {
+        height: auto;
+        width: 100%;
+    }
+
+  .jumbotron .overlay {
+    margin-top: 0px; /* Przesunięcie tekstu w dół */
+  }
+
+  .jumbotron {
+    margin-top: 50px; /* Dostosuj wartość według potrzeb */
+  }
+
+  body {
+      background-attachment: fixed; /* Ustawienie tła jako stałe */
+    }
+
+    .slider-container {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+<body class="main-body">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="https://cdn-fmlll.nitrocdn.com/UEBKrNhXfOfzPBspJGfpMzHeZvSfTBsF/assets/images/optimized/rev-aaee0f2/wimax.pl/wp-content/uploads/2022/03/wimax-logo-white.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Strona główna</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOferta" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Oferta
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownOferta">
+                            <a class="dropdown-item" href="oferta.html">Nasza oferta</a>
+                            <a class="dropdown-item" href="centra-monitorowania.html">Centra monitorowania</a>
+                            <a class="dropdown-item" href="systemy-vms.html">Systemy zarządzania video VMS</a>
+                            <a class="dropdown-item" href="systemy-vca.html">Systemy analityki obrazu VCA</a>
+                            <a class="dropdown-item" href="systemy-rozp-tablic.html">Systemy rozpoznawania tablic rejestracyjnych ANPR</a>
+                            <a class="dropdown-item" href="systemy-parkingowe.html">Systemy zarządzania parkingami</a>
+                            <a class="dropdown-item" href="systemy-rozp-twarzy.html">Systemy rozpoznawania twarzy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="o-firmie.html">O firmie</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="zastosowania.html">Zastosowania</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+
+<div style="margin-bottom: -45px;"></div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container-fluid p-0">
+      <img src="https://i.imgur.com/NPtFd14.jpeg" class="img-fluid" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+      <div class="overlay">
+          <h1 class="display-4 mt-3">Najnowocześniejsze światowe rozwiązania bezpieczeństwa</h1>
+      </div>
+  </div>
+</div>
+
+<div style="margin-bottom: -15px;"></div>
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-md-6">
+        <h2 class="header-responsive">O firmie</h2>
+          <p>WIMAX jest firmą, której misją jest wykorzystanie najnowocześniejszych, światowych rozwiązań z zakresu informatyki, dla zwiększania bezpieczeństwa swoich Klientów. Realizujemy ten cel poprzez dostarczanie na polski rynek systemów zabezpieczeń technicznych łączących dotychczasowe doświadczenia branży security z najnowszymi zdobyczami sektora IT.</p>
+            
+          <div style="margin-bottom: 15px;"></div>
+
+          <p>Działając w niezwykle wrażliwej sferze gospodarki jaką są usługi bezpieczeństwa, WIMAX skutecznie łączy profesjonalizm merytoryczny z poszanowaniem wartości etycznych, takich jak uczciwość, lojalność, rzetelność.</p>
+            
+            <div style="margin-bottom: 15px;"></div>
+
+          <p>Staramy się być tak blisko Klienta, jak to jest tylko możliwe. Partnerstwo w działaniu jest jedną z naszych naczelnych zasad. Pozwala ona na właściwe rozpoznanie specyfiki naszych Klientów, ich potrzeb i oferowanie im skutecznych, optymalnych kosztowo rozwiązań.</p>
+
+          <div style="margin-bottom: 15px;"></div>
+
+          <p>Jesteśmy autoryzowanym dystrybutorem i partnerem wielu światowych producentów będących liderami globalnego rynku.</p>
+
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="header-responsive">Nasze roz­wiązania:</h2>
+          <ul>
+              <li>redukują koszty stałe</li>
+              <li>ograniczają straty własne</li>
+              <li>centralizują zarządzanie bezpieczeństwem</li>
+          </ul>
+
+          <div style="margin-bottom: 30px;"></div>
+
+          <h2 class="header-responsive">Reprezentujemy:</h2>
+          <ul>
+              <li>wieloletnie doświadczenie</li>
+              <li>wiedzę w zakresie projektowania systemów zabezpieczeń</li>
+              <li>solidność w zakresie budowania systemów zabezpieczeń</li>
+          </ul>
+
+          <div style="margin-bottom: 50px;"></div>
+
+      </div>
+  </div>
+</div>
+
+<div style="margin-bottom: 75px;"></div>
+
+<div class="text-center">
+    <img src="https://i.imgur.com/k7mRMxk.jpeg" class="img-fluid" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+</div>
+
+<div style="margin-bottom: 75px;"></div>
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center header-responsive">Opinie naszych klientów</h2>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 30px;"></div>
+
+  <div class="slider-container">
+    <div class="slides">
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Autostrada Wielkopolska S.A. dziękuje WIMAX sp. j. za sprawność i profesjonalizm w realizacji Zintegrowanego Cyfrowego Systemu Rejestracji, Obserwacji, Analizy, Transmisji i Archiwizacji Wideo dla potrzeb zarządzania Autostradą A2. System dostarczony przez spółkę WIMAX, został przez nas uznany za optymalny. Charakteryzuje się dobrymi parametrami technicznymi i funkcjonalnymi, a równocześnie oferta miała najlepszy stosunek jakości do ceny.”</i></h5>
+                    <p-1 class="quote-author">Ryszard Gasiński (Dyrektor Techniczny, Autostrada Eksploatacja S.A.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/RKE5VeT.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Firma WIMAX świadczy dla nas od wielu lat usługi w zakresie projektowania, instalacji i utrzymania systemu monitorowania na najwyższym poziomie.”</i></h5>
+                    <p-1 class="quote-author">Krzysztof Karpa (Dyrektor Biura Administracji, WRSRH S.A.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/Efr0ex9.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“System monitoringu wizyjnego dostarczony przez WIMAX sp. j. daje nam pewność bezawaryjnej pracy systemu oraz umożliwia ciągłą aktualizację, rozbudowę i uzyskanie oczekiwanej funkcjonalności przy integracji z systemami innych dostawców, których rozwiązania wykorzystujemy.”</i></h5>
+                    <p-1 class="quote-author">Mariusz Łodyga (komendant Strazy Miejskiej w Piasecznie)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/bAufwFO.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“System monitoringu wizyjnego miasta dostarczony przez WIMAX spełnia nasze wymagania, jest ciągle rozwijany i aktualizowany, dostarczając aktualizacje oparte o najnowsze światowe trendy.”</i></h5>
+                    <p-1 class="quote-author">Roman Frąckowiak (komendant Straży Miejskiej w Nakle nad Notecią)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/wYAzcy8.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Firma WIMAX sp. j. realizowała inwestycję wykonania "Obwodowego systemu nadzoru CCTV wzdłuż linii ogrodzenia terenu Terminala Paliw nr 111 we Wrocławiu" obejmującą swym zakresem również sporządzenie Kompleksowego Projektu Wykonawczego oraz Dokumentacji Powykonawczej. Wykonany zakres prac został zrealizowany w terminie, zgodnie z umową i projektem oraz przy zachowaniu należytej staranności.”</i></h5>
+                    <p-1 class="quote-author">Jacek Czapliński (Dyrektor Wykonawczy ds. Zakupów, PKN ORLEN S.A.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/6qo8ZJQ.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“WIMAX sp. j. uczestniczyła w wykonaniu zadania "Budowa sieci informatycznej, systemu monitoringu i VoIP na terenie miasta Milanówka" i była odpowiedzialna za wykonanie i dostarczenie systemu monitoringu. Prace zostały wykonane zgodnie z umową, zasadami wiedzy technicznej, obowiązującymi normami i przepisami technicznymi oraz w sposób należyty.”</i></h5>
+                    <p-1 class="quote-author">Łukasz Stępień (burmistrz Milanówka)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/1NGUFaW.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Firma WIMAX sp. j. wykonała należycie i zgodnie z zasadami sztuki budowlanej prace w zakresie zaprojektowania, dostawy, instalacji i uruchomienia systemów monitoriningu wizyjnego z wykorzystaniem kamer IP w Bazie Paliw w Rejowcu Poznańskim oraz Boronowie.”</i></h5>
+                    <p-1 class="quote-author">Jan Chmielowiec (Dyrektor Biura Kontroli i Bezpieczeństwa, OLPP sp. z o.o.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/timffpN.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Firma Wimax sp. j. wykonała w budynku Nordic Park prace w zakresie systemu CCTV, KD, SWIN oraz depozytora kluczy i tripodów jak również włączyła przejścia KD do systemu SAP. Wszystkie prace zostały wykonane zgodnie z umową, w sposób nie budzący zastrzeżeń, z należytą starannością, z zachowaniem obowiązujących norm, przepisów, wymagań jakościowych i zgodnie z zasadami sztuki budowlanej.”</i></h5>
+                    <p-1 class="quote-author">Adam Wiśniewski (Pełnomocnik ds. Ochrony Informacji Niejawnych, PSE Centrum S.A.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/5LLPAnj.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="quote-container">
+                <blockquote class="blockquote">
+                    <h5 class="quote-text"><i>“Wyrażam najwyższe uznanie dla profesjonalizmu, doświadczenia, jakości usług oraz zaangażowania i uczciwości firmy Wimax sp. j., która świadczy dla Centrów Obsługi Gotówki Brink's C.L. Polska Sp. z o.o. usługi w zakresie projektowania, dostarczania, instalowana, uruchomiania, programowania, testowania, integracji i szkoleń dla obsługi, konserwacji i serwisu systemów zabezpieczeń technicznych: CCTV, SWIN, SKD, wideo domofonów i innych.”</i></h5>
+                    <p-1 class="quote-author">Marcin Ostrzycki (Prezes Zarządu, Brink's C.L. Polska Sp. z o.o.)</p>
+                    <div class="img-container">
+                        <img src="https://i.imgur.com/lhgw9Xt.jpeg" class="img-fluid" alt="Responsywny obraz">
+                      </div>
+                </blockquote>
+            </div>
+        </div>
+    
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+</div> 
+
+<div style="margin-bottom: 50px;"></div>
+
+
+<div style="margin-bottom: 75px;"></div>
+
+<footer class="footer mt-auto py-3 text-white" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://cdn-fmlll.nitrocdn.com/UEBKrNhXfOfzPBspJGfpMzHeZvSfTBsF/assets/images/optimized/rev-aaee0f2/wimax.pl/wp-content/uploads/2022/03/wimax-logo-white.png" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h5>Dane kontaktowe:</h5>
+                <div style="margin-bottom: 15px;"></div>
+                <p>Walecznych 68 A, 03-926 Warszawa</p>
+                <div style="margin-bottom: -15px;"></div>
+                <p>Telefon/Fax: <a href="tel:+48226727922">+48 22 672 79 22</a></p>
+                <div style="margin-bottom: -15px;"></div>
+                <p>E-mail: <a href="mailto:biuro@wimax.pl">biuro@wimax.pl</a></p>
+            </div>
+            <div class="col-md-4">
+                <div class="social-buttons center-align">
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@wimax_monitoring/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/768px-YouTube_icon_%282013-2017%29.png" alt="YouTube" width="40" height="40">
+                    </a>
+                
+                    <span style="margin-right: 10px;"></span>
+
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-top: 1px solid #d3cacc; width: 100%; margin: 16px auto;">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                &copy; <span id="currentYear"></span>, WIMAX, All Rights Reserved
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
+
+setInterval(() => {
+    slideIndex++;
+    if (slideIndex > document.getElementsByClassName("slide").length) {
+        slideIndex = 1;
+    }
+    showSlides(slideIndex);
+}, 15000);
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
