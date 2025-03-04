@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Alchemia by Miłosz Sowa - Fullstack Web Developing</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/A3K2RQE.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-mnie.html">O mnie</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <div style="margin-left: -10px;"></div>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOferta" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOferta">
+                            <li><a class="dropdown-item" href="tworzenie.html">Projektowanie i tworzenie stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="optymalizacja.html">Optymalizacja i rozwój stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="integracja.html">Integracja z systemami zewnętrznymi</a></li>
+                            <li><a class="dropdown-item" href="bezpieczenstwo.html">Wdrażenie systemów bezpieczeństwa</a></li>
+                            <li><a class="dropdown-item" href="wsparcie.html">Wsparcie techniczne i konsultacje</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nagłówek z tłem -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Witaj w Cyber Alchemii!</h1>
+<p>Strony internetowe, które przyciągają uwagę</p>
+        </div>
+    </header>
+
+    <!-- Sekcja O mnie -->
+    <section id="about" class="py-5">
+        <div class="container">
+
+            <a href="o-mnie.html" style="text-decoration: none; color: inherit;">
+                <h2 class="text-center mb-4 section-header">O mnie</h2>
+            </a>
+
+            <div class="row">
+                <!-- Sekcja 1 -->
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!-- Kliknięcie w obrazek wywołuje modal -->
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal1">
+                                        <img src="https://i.imgur.com/2twcDAv.jpeg" class="img-fluid rounded mb-3 mx-auto d-block" alt="Zdjęcie Miłosza Sowy" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <hr class="card-separator">
+                                    <h5 class="card-title text-center">Twórca stron internetowych</h5>
+                                    <hr class="card-separator">
+                                    <p class="card-text text-center">
+                                        Cześć! Nazywam się <b>Miłosz Sowa</b>. 
+                                        
+                                        <div style="margin-bottom: 20px;"></div>
+                                        
+                                        <p class="card-text text-center">Pozwól, że wprowadzę Cię do świata <b>Cyber Alchemii</b>, gdzie technologia spotyka się z magią twórczości. Podobnie jak dawni alchemicy, którzy dążyli do przemiany zwykłych metali w złoto, ja przekształcam kod i koncepcje w funkcjonalne, piękne strony internetowe.</p>
+                                        
+                                        <div style="margin-bottom: 20px;"></div>
+                                        
+                                        <p class="card-text text-center">Wierzę, że każda linia kodu to składnik eliksiru, który nadaje życie nowoczesnym i eleganckim stronom internetowym.</p>
+                                        
+                                        <div style="margin-bottom: 20px;"></div>
+                                        
+                                        <p class="card-text text-center">Każdy projekt to dla mnie nowe laboratorium, w którym łączę składniki – od <b>HTML</b> i <b>CSS</b>, po <b>JavaScript</b> i <b>PHP</b> – tworząc bez użycia gotowych szablonów.</p>
+
+                                        <div style="margin-bottom: 20px;"></div>
+
+                                        <p class="card-text text-center">Dzięki temu każdy projekt jest absolutnie unikalny i dostosowany do Twoich potrzeb.</p>
+
+                                        <div style="margin-bottom: 20px;"></div>
+
+                                        <p class="card-text text-center">Zanurz się w procesie, gdzie Twoje pomysły stają się kamieniem filozoficznym, a ja, jako cyfrowy alchemik, starannie dobieram techniki i narzędzia, aby wydobyć z nich to, co najlepsze.</p>
+
+                                        <div style="margin-bottom: 20px;"></div>
+
+                                        <p class="card-text text-center">Tworzę strony internetowe od podstaw, tak jak alchemik tworzy swoje eliksiry – z precyzją i indywidualnym podejściem do każdego składnika.</p>
+                                        
+                                        <div style="margin-bottom: 20px;"></div>
+                                        
+                                        <p class="card-text text-center"><b>Przekonaj się, jak w moim warsztacie technologia zamienia się w cyfrowe złoto, tworząc strony, które nie tylko zachwycają wyglądem, ale też działają bezbłędnie na każdym urządzeniu!</b>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Modal 1 -->
+                <div class="modal fade" id="aboutModal1" tabindex="-1" aria-labelledby="aboutModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img src="https://i.imgur.com/ttL7Y2p.jpeg" class="img-fluid rounded mb-3 mx-auto d-block" alt="Zdjęcie Miłosza Sowy w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sekcja 3 -->
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!-- Kliknięcie w obrazek wywołuje modal -->
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal3">
+                                        <img src="https://i.imgur.com/sGOp3Fh.jpeg" class="img-fluid rounded mb-3 mx-auto d-block" alt="Technologie i pasje" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <hr class="card-separator">
+                                    <h5 class="card-title text-center">Pasje i zainteresowania</h5>
+                                    <hr class="card-separator">
+                                    <p class="card-text text-center">
+                                        Poza tworzeniem stron, jestem amerykanistą, publicystą i komentatorem.
+                                        <br><br> <!-- Dodanie odstępu między akapitami -->
+                                        Współtworzę podcast <a href="https://www.youtube.com/@NiepoprawnyDyplomata" target="_blank" rel="noopener noreferrer">"Niepoprawny Dyplomata"</a> na YouTube.
+
+                                        <div style="margin-bottom: 20px;"></div>
+
+                                        <p class="card-text text-center">W wolnym czasie relaksuję się również czytając literaturę faktu, grając w darta, jedząc ramen i przeglądając archiwalne nagrania z telewizji oraz radia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sekcja 4 -->
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!-- Kliknięcie w obrazek wywołuje modal -->
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal4">
+                                        <img src="https://i.imgur.com/c0mG7K9.png" class="img-fluid rounded mb-3 mx-auto d-block" alt="Logo partnera lh.pl" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                    </a>
+                                </div>
+                                <div class="col-md-9">
+                                    <hr class="card-separator">
+                                    <h5 class="card-title text-center">Partnerstwo z lh.pl</h5>
+                                    <hr class="card-separator">
+                                    <p class="card-text text-center">
+                                        Jako partner <a href="https://www.lh.pl" target="_blank" rel="noopener noreferrer">lh.pl</a>, współpracuję z jedną z wiodących firm hostingowych w Polsce, oferując moim klientom najwyższej jakości usługi hostingowe.</p>
+                                        
+                                        <div style="margin-bottom: 20px;"></div>
+
+                                        <p class="card-text text-center">Dzięki temu moje projekty mają solidne zaplecze techniczne oraz gwarantują bezpieczeństwo i niezawodność działania.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    
+    <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+    <!-- Sekcja Usługi -->
+    <section id="services" class="py-5">
+        <div class="container">
+
+            <a href="uslugi.html" style="text-decoration: none; color: inherit;">
+                <h2 class="text-center mb-4 section-header">Usługi</h2>
+            </a>
+
+            <div class="row">
+                <!-- Pierwszy rząd - 3 kolumny -->
+                <div class="col-md-4 d-flex">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <div style="overflow: hidden;">
+                                <img src="https://i.imgur.com/qSHcE99.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" 
+                            alt="Projektowanie i tworzenie stron internetowych">
+                            </div>
+    
+                            <hr class="card-separator">
+    
+                            <h5 class="card-title text-center">Projektowanie i tworzenie stron internetowych</h5>
+    
+                            <hr class="card-separator">
+    
+                            <p class="card-text text-center">Tworzę nowoczesne strony internetowe, które dobrze prezentują się na każdym urządzeniu oraz łączą atrakcyjny design z intuicyjną obsługą. </p>
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                <p class="card-text text-center">
+                                
+                                Moje strony są szybkie, bezpieczne i zoptymalizowane pod kątem wyszukiwarek internetowych, dostosowane do Twoich potrzeb i oczekiwań.</p>
+                        
+                                <a href="tworzenie.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 d-flex">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <img src="https://i.imgur.com/wu29LHh.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Optymalizacja i rozwój istniejących stron internetowych">
+    
+                            <hr class="card-separator">
+    
+                            <h5 class="card-title text-center">Optymalizacja i rozwój istniejących stron internetowych</h5>
+    
+                            <hr class="card-separator">
+    
+                            <p class="card-text text-center">Poprawię wydajność, szybkość i bezpieczeństwo Twojej strony, jednocześnie dostosowując ją do najnowszych standardów.</p>
+                                
+                                <div style="margin-bottom: 20px;"></div>
+
+                                <p class="card-text text-center">
+                                
+                                Zajmuję się zwiększaniem widoczności stron w wyszukiwarkach, oraz wprowadzaniem ulepszeń, które podniosą doświadczenie korzystania z Twojej strony.</p>
+
+                                <div style="margin-bottom: 32px;"></div>
+                                
+                                <a href="optymalizacja.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <img src="https://i.imgur.com/xaUE8We.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Integracja z systemami zewnętrznymi">
+    
+                            <hr class="card-separator">
+    
+                            <h5 class="card-title text-center">Integracja z systemami zewnętrznymi</h5>
+    
+                            <hr class="card-separator">
+    
+                            <p class="card-text text-center">Połączę Twoją stronę z zewnętrznymi systemami i usługami, takimi jak CMS (Wordpress) czy platformami e-commerce (Woocommerce, Shoper, Shopify).</p> 
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                <p class="card-text text-center">
+                                
+                                Dzięki takim rozwiązaniom, stworzona przeze mnie strona będzie działać efektywnie w połączeniu z najnowszymi technologiami.</p>
+
+                                <div style="margin-bottom: 32px;"></div>
+                                
+                                <a href="integracja.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 50px;"></div>
+    
+            <div class="row">
+                <!-- Drugi rząd - 2 kolumny wycentrowane -->
+                <div class="col-md-4 offset-md-2 d-flex">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <img src="https://i.imgur.com/fa0A1tY.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Wdrażenie systemów bezpieczeństwa na stronie">
+    
+                            <hr class="card-separator">
+    
+                            <h5 class="card-title text-center">Wdrażenie systemów bezpieczeństwa na stronie</h5>
+    
+                            <hr class="card-separator">
+    
+                            <p class="card-text text-center">Wdrażam systemy bezpieczeństwa, takie jak certyfikaty SSL czy CAPTCHA na Twoją stronę, dzięki czemu jest ona zabezpieczona przed różnymi rodzajami zagrożeń bądź narażeniem na usterki.</p>
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                <p class="card-text text-center">
+                                
+                                Regularnie monitoruję i aktualizuję zabezpieczenia, aby tworzone przeze mnie strony były zawsze bezpieczne i chronione.</p>
+
+                                <div style="margin-bottom: 52px;"></div>
+                                
+                                <a href="bezpieczenstwo.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <img src="https://i.imgur.com/2vsNh7c.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Wsparcie techniczne i konsultacje">
+    
+                            <hr class="card-separator">
+    
+                            <h5 class="card-title text-center">Wsparcie techniczne i konsultacje</h5>
+    
+                            <hr class="card-separator">
+    
+                            <p class="card-text text-center">Zapewniam profesjonalne wsparcie techniczne oraz doradztwo na każdym etapie projektu.</p>
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                <p class="card-text text-center">
+                                
+                                Oferuję pomoc w doborze technologii, szkolenia z obsługi strony i bieżące wsparcie po jej stworzeniu.</p>
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                <p class="card-text text-center">
+                                
+                                Dzięki temu zyskasz pewność, że Twoja strona działa sprawnie i zgodnie z Twoimi oczekiwaniami.</p>
+
+                                <div style="margin-bottom: 32px;"></div>
+                                
+                                <a href="wsparcie.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+    <!-- Sekcja Portfolio -->
+   
+    <section id="portfolio" class="py-5">
+        <div class="container">
+
+            <a href="portfolio.html" style="text-decoration: none; color: inherit;">
+            <h2 class="text-center mb-4 section-header">Portfolio</h2>
+        </a>
+
+            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="12500">
+                <!-- Kropki nawigacyjne -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <div class="container">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-inner">
+                            <!-- Slide 1: Projekt 1 -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <!-- Karta 1 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal1">
+                                                <img src="https://i.imgur.com/rJP4ULB.jpeg" class="card-img-top" alt="Projekt 1 - Zdjęcie 1" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">(Nie)poprawny Dyplomata</h5>
+                                                <p class="card-text text-center">Podcast o polityce zagranicznej</p>
+
+                                                <a href="nd.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 1 -->
+                                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="nd.html" class="img-fluid" alt="Projekt 1 - Zdjęcie 1 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Karta 2 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal2">
+                                                <img src="https://i.imgur.com/uJnphnJ.jpeg" class="card-img-top" alt="Projekt 1 - Zdjęcie 2" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">(Nie)poprawny Dyplomata</h5>
+                                                <p class="card-text text-center">Podcast o polityce zagranicznej</p>
+
+                                                <a href="nd.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 2 -->
+                                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/uJnphnJ.jpeg" class="img-fluid" alt="Projekt 1 - Zdjęcie 2 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Karta 3 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal3">
+                                                <img src="https://i.imgur.com/E85iR6b.jpeg" class="card-img-top" alt="Projekt 1 - Zdjęcie 3" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">(Nie)poprawny Dyplomata</h5>
+                                                <p class="card-text text-center">Podcast o polityce zagranicznej</p>
+
+                                                <a href="nd.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 3 -->
+                                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/E85iR6b.jpeg" class="img-fluid" alt="Projekt 1 - Zdjęcie 3 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 2: Projekt 2 -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Karta 1 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                                                <img src="https://i.imgur.com/rBz5R1N.jpeg" class="card-img-top" alt="Projekt 2 - Zdjęcie 1" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Wimax</h5>
+                                                <p class="card-text text-center">Firma montująca systemy bezpieczeństwa</p>
+
+                                                <a href="wimax.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 1 -->
+                                    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/rBz5R1N.jpeg" class="img-fluid" alt="Projekt 2 - Zdjęcie 1 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Karta 2 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                                                <img src="https://i.imgur.com/YGyJnAv.jpeg" class="card-img-top" alt="Projekt 2 - Zdjęcie 2" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Wimax</h5>
+                                                <p class="card-text text-center">Firma montująca systemy bezpieczeństwa</p>
+
+                                                <a href="wimax.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 2 -->
+                                    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/YGyJnAv.jpeg" class="img-fluid" alt="Projekt 2 - Zdjęcie 2 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Karta 3 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                                                <img src="https://i.imgur.com/GCBD9uW.jpeg" class="card-img-top" alt="Projekt 2 - Zdjęcie 3" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Wimax</h5>
+                                                <p class="card-text text-center">Firma montująca systemy bezpieczeństwa</p>
+
+                                                <a href="wimax.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 3 -->
+                                    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModal3Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/GCBD9uW.jpeg" class="img-fluid" alt="Projekt 2 - Zdjęcie 3 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Slide 3: Projekt 3 -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Karta 1 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#project3Modal1">
+                                                <img src="https://i.imgur.com/7DxF86q.jpeg" class="card-img-top" alt="Projekt 3 - Zdjęcie 1" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Polskie Armaty</h5>
+                                                <p class="card-text text-center">Portal o klubie piłkarskim</p>
+
+                                                <a href="armaty.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 1 dla Projektu 3 -->
+                                    <div class="modal fade" id="project3Modal1" tabindex="-1" aria-labelledby="project3Modal1Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/7DxF86q.jpeg" class="img-fluid" alt="Projekt 3 - Zdjęcie 1 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Karta 2 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#project3Modal2">
+                                                <img src="https://i.imgur.com/FrAk06G.jpeg" class="card-img-top" alt="Projekt 3 - Zdjęcie 2" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Polskie Armaty</h5>
+                                                <p class="card-text text-center">Portal o klubie piłkarskim</p>
+
+                                                <a href="armaty.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 2 dla Projektu 3 -->
+                                    <div class="modal fade" id="project3Modal2" tabindex="-1" aria-labelledby="project3Modal2Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/FrAk06G.jpeg" class="img-fluid" alt="Projekt 3 - Zdjęcie 2 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Karta 3 -->
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#project3Modal3">
+                                                <img src="https://i.imgur.com/Eh3CvVV.jpeg" class="card-img-top" alt="Projekt 3 - Zdjęcie 3" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                            </a>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Polskie Armaty</h5>
+                                                <p class="card-text text-center">Portal o klubie piłkarskim</p>
+
+                                                <a href="armaty.html" class="btn btn-primary d-block text-center mt-3">Dowiedz się więcej</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal 3 dla Projektu 3 -->
+                                    <div class="modal fade" id="project3Modal3" tabindex="-1" aria-labelledby="project3Modal3Label" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <img src="https://i.imgur.com/Eh3CvVV.jpeg" class="img-fluid" alt="Projekt 3 - Zdjęcie 3 w pełnej rozdzielczości" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+
+    <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+    <!-- Sekcja Blog -->
+    <section id="blog" class="py-5">
+        <div class="container">
+
+            <a href="blog.html" style="text-decoration: none; color: inherit;">
+            <h2 class="text-center mb-4 section-header-custom">Blog</h2>
+        </a>
+    
+            <div class="row">
+                <!-- Pierwszy wpis -->
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <div style="overflow: hidden;">
+                                <img src="https://i.imgur.com/4MHbwcl.jpeg" 
+     class="card-img-top mb-3 mx-auto d-block" 
+     style="max-width: 130px; transition: transform 2s ease; transform-origin: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);" 
+     alt="Tytuł wpisu 1">
+                            </div>
+                            <hr class="card-separator">
+                            <h5 class="card-title text-center">Dlaczego wciąż warto mieć swoją własną stronę internetową?</h5>
+                            <hr class="card-separator">
+                            <p class="card-text text-center">W dobie mediów społecznościowych i aplikacji mobilnych wiele osób zastanawia się, czy strona internetowa jest nadal potrzebna. </p> 
+
+                                <div style="margin-bottom: 15px;"></div>
+                            
+                                <p class="card-text text-center">Strona internetowa to wciąż fundament obecności online i kluczowe narzędzie do budowania wizerunku, przyciągania klientów oraz automatyzacji działań biznesowych.</p>
+                            
+                                <div style="margin-bottom: 40px;"></div>
+
+                            <a href="https://example-link.com/post1" class="btn btn-primary d-block text-center mt-3">Przeczytaj więcej</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Drugi wpis -->
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <div style="overflow: hidden;">
+                                <img src="https://i.imgur.com/855cUK8.jpeg" 
+     class="card-img-top mb-3 mx-auto d-block" 
+     style="max-width: 130px; transition: transform 2s ease; transform-origin: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);" 
+     alt="Tytuł wpisu 2">
+                            </div>
+                            <hr class="card-separator">
+                            <h5 class="card-title text-center">Responsywność kluczem do sukcesu Twojej strony</h5>
+                            <hr class="card-separator">
+                            <p class="card-text text-center">W świecie, w którym ponad połowa ruchu internetowego pochodzi z urządzeń mobilnych, posiadanie strony internetowej, która działa dobrze na różnych ekranach, nie jest już opcją – to konieczność. </p>
+                            
+                                <div style="margin-bottom: 15px;"></div>
+                                
+                                <p class="card-text text-center">Responsywność, czyli zdolność strony do dostosowywania się do wielkości i orientacji ekranu, stała się jednym z najważniejszych czynników decydujących o sukcesie online.</p>
+
+                            <a href="https://example-link.com/post2" class="btn btn-primary d-block text-center mt-3">Przeczytaj więcej</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Trzeci wpis -->
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 flex-fill">
+                        <div class="card-body">
+                            <div style="overflow: hidden;">
+                                <img src="https://i.imgur.com/UcFl6dE.jpeg" 
+     class="card-img-top mb-3 mx-auto d-block" 
+     style="max-width: 130px; transition: transform 2s ease; transform-origin: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);" 
+     alt="Tytuł wpisu 3">
+                            </div>
+                            <hr class="card-separator">
+                            <h5 class="card-title text-center">Minimalizm w projektowaniu stron internetowych</h5>
+                            <hr class="card-separator">
+                            <p class="card-text text-center">Minimalizm w projektowaniu stron internetowych to trend, który zyskał na popularności w ostatnich latach i stał się jednym z najważniejszych podejść w web designie.</p>
+                            
+                                <div style="margin-bottom: 15px;"></div>
+                                
+                                <p class="card-text text-center">Oznacza to uproszczenie wizualnych i funkcjonalnych elementów strony, aby skupić uwagę użytkownika na tym, co naprawdę istotne.</p>
+
+                            <a href="https://example-link.com/post3" class="btn btn-primary d-block text-center mt-3">Przeczytaj więcej</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 section-header-custom">Kontakt</h2>
+    
+            <!-- Sekcja CTA z obrazem -->
+            <div class="cta-section card bg-light p-5 mb-5 shadow-sm border-primary">
+                <div class="row align-items-center">
+                    <!-- Miejsce na obraz z tłem i cieniem -->
+                    <div class="col-md-6 text-center">
+                        <div class="image-wrapper bg-primary p-4 rounded shadow-lg">
+                            <img src="https://i.imgur.com/6sxAmI4.png" class="img-fluid rounded shadow" alt="Call to Action Image" style="max-height: 400px; opacity: 0.9;">
+                        </div>
+                    </div>
+                    <!-- Miejsce na tekst CTA -->
+                    <div class="col-md-6">
+                        <div class="card-body text-center">
+                            <h3 class="card-title mb-3">Zacznij współpracę ze mną już teraz!</h3>
+    
+                            <div style="margin-bottom: 20px;"></div>
+    
+                            <p class="card-text mb-4">Chcesz, aby Twoja strona internetowa była nowoczesna, szybka i profesjonalna? 
+    
+                                <div style="margin-bottom: 20px;"></div>
+    
+                                Oferuję szeroki zakres usług, które pomogą Ci osiągnąć sukces w Internecie. 
+                                
+                                <div style="margin-bottom: 20px;"></div>
+                                
+                                Umów się ze mną na bezpłatną konsultację i dowiedz się, jak mogę pomóc rozwinąć Twój biznes!</p>
+    
+                                <div style="margin-bottom: 20px;"></div>
+    
+                            <a href="https://cal.com/miłosz-sowa-f5z1bk/30min" class="btn btn-primary btn-lg px-4">Umów termin rozmowy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Karta z informacją o formularzu kontaktowym -->
+            <div class="card bg-light p-4 mb-5 shadow-sm border-info">
+                <div class="card-body text-center">
+                    <h3 class="card-title mb-3">Masz pytania? Skontaktuj się ze mną!</h3>
+                    <p class="card-text mb-4">Jeśli masz dodatkowe pytania lub chcesz dowiedzieć się więcej o moich usługach, jestem do Twojej dyspozycji. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Możesz skontaktować się ze mną także poprzez <a href="#contactForm" class="text-info">formularz kontaktowy</a>.</p>
+                    <a href="#contactForm" class="btn btn-info btn-lg px-4">Przejdź do formularza</a>
+                </div>
+            </div>
+    
+            <!-- Sekcja informacyjna o umowie handlowej -->
+            <div class="card bg-light p-4 mb-5 shadow-sm border-warning">
+                <div class="card-body text-center">
+                    <h3 class="card-title mb-3">Informacje dotyczące zawarcia umowy handlowej</h3>
+                    <p class="card-text mb-4">
+                        Przed przystąpieniem do realizacji projektu wymagane jest podpisanie umowy handlowej, która określa szczegółowe warunki współpracy, zakres usług oraz harmonogram realizacji. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+    
+                        Umowa handlowa zabezpiecza interesy obu stron, jasno definiując oczekiwania, koszty oraz terminy. Podpisanie umowy oznacza akceptację warunków i gwarancję profesjonalnego podejścia do projektu. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Zachęcam do kontaktu w celu ustalenia szczegółów współpracy!
+                    </p>
+                </div>
+            </div>
+    
+            <h2 class="text-center mb-4 section-header-custom">Formularz kontaktowy</h2>
+
+            <!-- Formularz kontaktowy -->
+            <form id="contactForm" method="POST" action="submit_form.php">
+                <div class="form-group">
+                    <label for="name">Imię:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon komórkowy:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{9}" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość:</label>
+                    <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                </div>
+    
+                <div style="margin-bottom: 20px;"></div>
+    
+                <button type="submit" id="submitButton" class="btn btn-primary">Wyślij</button>
+                <div id="formResponse" class="response"></div>
+            </form>
+        </div>
+    </section>
+
+    <div class="card bg-light p-4 mb-5 shadow-sm border-warning w-75 mx-auto">
+        <div class="card-body text-center">
+            <h3 class="card-title mb-3">Polityka RODO</h3>
+            <p class="card-text mb-4">
+                Dbając o ochronę danych osobowych, przestrzegam przepisów RODO (Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679). Twoje dane są przetwarzane w sposób przejrzysty i zgodny z obowiązującymi przepisami.
+            </p>
+            <div style="margin-bottom: 20px;"></div>
+            <p class="card-text mb-4">
+                Przetwarzam dane takie jak imię, nazwisko, adres e-mail oraz numer telefonu wyłącznie w celu realizacji zamówionych usług, kontaktu z klientami oraz (za zgodą) w celach marketingowych. Twoje dane są bezpieczne i nie są udostępniane osobom trzecim.
+            </p>
+            <div style="margin-bottom: 20px;"></div>
+            <p class="card-text mb-4">
+                Masz prawo do dostępu, poprawiania, usuwania swoich danych oraz wniesienia sprzeciwu wobec ich przetwarzania. Wszelkie pytania dotyczące ochrony danych osobowych kieruj na adres: <a href="mailto: cyberalchemia@gmail.com">cyberalchemia@gmail.com</a>.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Stopka -->
+    <footer class="footer custom-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h2>O mnie</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p class="centered-paragraph">Nazywam się Miłosz Sowa i specjalizuję się w tworzeniu eleganckich oraz funkcjonalnych stron internetowych. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Jeśli potrzebujesz profesjonalnego wsparcia w projektowaniu swojej witryny, zapraszam do kontaktu.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Kontakt</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p><strong>Email:</strong> <a href="mailto:cyberalchemia@gmail.com">cyberalchemia@gmail.com</a></p>
+                    <p><strong>Telefon:</strong> <a href="tel:+48693859349">+48 693 859 349</a></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Znajdź mnie na</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        </a>
+                        <a href="https://x.com" target="_blank" class="social-button x">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" alt="X">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-button instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid #d3cacc; width: 100%; margin: 16px auto;">
+
+            <div class="text-center">
+                <p>&copy; <span id="currentYear"></span> Miłosz Sowa. Wszystkie prawa zastrzeżone.</p>
+
+                <div style="margin-bottom: -20px;"></div>
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+    <script src="script_form.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

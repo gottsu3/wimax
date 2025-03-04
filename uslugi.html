@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Alchemia by Miłosz Sowa - Fullstack Web Developing</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/A3K2RQE.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-mnie.html">O mnie</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <div style="margin-left: -10px;"></div>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOferta" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOferta">
+                            <li><a class="dropdown-item" href="tworzenie.html">Projektowanie i tworzenie stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="optymalizacja.html">Optymalizacja i rozwój stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="integracja.html">Integracja z systemami zewnętrznymi</a></li>
+                            <li><a class="dropdown-item" href="bezpieczenstwo.html">Wdrażenie systemów bezpieczeństwa</a></li>
+                            <li><a class="dropdown-item" href="wsparcie.html">Wsparcie techniczne i konsultacje</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nagłówek z tłem -->
+    <header class="hero-1 bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Usługi</h1>
+<p>Zobacz co mam do zaoferowania</p>
+        </div>
+    </header>
+
+    <!-- Sekcja Usługi / Oferta -->
+<section id="services" class="services-section py-5">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="portfolio-section section-header text-center mb-3">Moje usługi</h1>
+
+         
+                <div class="card no-hover">
+            <div class="card-body">
+                <p class="card-text" style="font-size: 18px;">Kompleksowe usługi w zakresie tworzenia i utrzymania stron internetowych, które odpowiadają Twoim potrzebom.</p>
+
+            </div>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+
+<hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+<div style="margin-bottom: 30px;"></div>
+
+<div class="row">
+    
+    <!-- Usługa 1: Tworzenie stron internetowych -->
+    <div class="col-md-4 d-flex">
+        <div class="card mb-4 h-100 flex-fill">
+            <div class="card-body">
+                <img src="https://i.imgur.com/qSHcE99.png" class="card-img-top mb-3 mx-auto d-block" 
+                style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" 
+                alt="Projektowanie i tworzenie stron internetowych">
+                <h5 class="card-title">Projektowanie i tworzenie stron internetowych</h5>
+                <p class="card-text">Tworzenie nowoczesnych stron internetowych, które dobrze prezentują się na każdym urządzeniu oraz łączą atrakcyjny design z intuicyjną obsługą.</p>
+                <hr>
+                <h6>Cennik:</h6>
+                <ul class="list-unstyled">
+                    <li>Strona wizytówka: <strong>od 0 zł</strong></li>
+                    <li>Strona firmowa: <strong>od 0 zł</strong></li>
+                    <li>Strona z CMS: <strong>od 0 zł</strong></li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <!-- Przycisk do wywołania modala -->
+                <a href="tworzenie.html" class="btn btn-secondary">
+                    Szczegóły
+                </a>
+            </div>
+        </div>
+    </div>
+
+            <!-- Usługa 2: Projektowanie graficzne -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 h-100 flex-fill">
+                    <div class="card-body">
+                        <img src="https://i.imgur.com/wu29LHh.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Optymalizacja i rozwój istniejących stron internetowych">
+                        <h5 class="card-title">Optymalizacja i rozwój istniejących stron internetowych</h5>
+                        <p class="card-text">Poprawianie wydajności, szybkości i bezpieczeństwa Twojej strony oraz dostosowywanie jej do najnowszych standardów.</p>
+                        <hr>
+                        <h6>Cennik:</h6>
+                        <ul class="list-unstyled">
+                            <li>Logo: <strong>od 0 zł</strong></li>
+                            <li>Projekt wizytówki: <strong>od 0 zł</strong></li>
+                            <li>Banery reklamowe: <strong>od 0 zł</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Przycisk otwierający modal -->
+                        <a href="optymalizacja.html" class="btn btn-secondary">
+                            Szczegóły
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Usługa 3: Konsultacje techniczne -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 h-100 flex-fill">
+                    <div class="card-body">
+                        <img src="https://i.imgur.com/xaUE8We.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Integracja z systemami zewnętrznymi">
+                        <h5 class="card-title">Integracja z systemami zewnętrznymi</h5>
+                        <p class="card-text">Łączenie Twojej strony z zewnętrznymi systemami i usługami, takimi jak CMS (Wordpress) czy platformami e-commerce (Woocommerce, Shoper, Shopify).</p>
+                        <hr>
+                        <h6>Cennik:</h6>
+                        <ul class="list-unstyled">
+                            <li>Konsultacja techniczna: <strong>od 0 zł/h</strong></li>
+                            <li>Audyt technologiczny: <strong>od 0 zł</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Przycisk otwierający modal -->
+                        <a href="integracja.html" class="btn btn-secondary">
+                            Szczegóły
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        <div style="margin-bottom: 50px;"></div>
+
+        <div class="row">
+            <!-- Usługa 4: SEO i Optymalizacja -->
+            <div class="col-md-4 offset-md-2 d-flex">
+                <div class="card mb-4 h-100 flex-fill">
+                    <div class="card-body">
+                        <img src="https://i.imgur.com/fa0A1tY.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Wdrażenie systemów bezpieczeństwa na stronie">
+                        <h5 class="card-title">Wdrażenie systemów bezpieczeństwa na stronie</h5>
+                        <p class="card-text">Wdrażanie systemów bezpieczeństwa, takich jak certyfikaty SSL czy CAPTCHA na Twoją stronę, dzięki czemu jest ona zabezpieczona przed różnymi rodzajami zagrożeń bądź narażeniem na usterki.</p>
+                        <hr>
+                        <h6>Cennik:</h6>
+                        <ul class="list-unstyled">
+                            <li>Audyt SEO: <strong>od 0 zł</strong></li>
+                            <li>Optymalizacja techniczna: <strong>od 0 zł</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Przycisk otwierający modal -->
+                        <a href="bezpieczenstwo.html" class="btn btn-secondary">
+                            Szczegóły
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Usługa 5: Sklepy internetowe -->
+            <div class="col-md-4 d-flex">
+                <div class="card mb-4 h-100 flex-fill">
+                    <div class="card-body">
+                        <img src="https://i.imgur.com/2vsNh7c.png" class="card-img-top mb-3 mx-auto d-block" 
+                            style="max-width: 130px; transition: transform 1s ease; transform-origin: center;" alt="Wsparcie techniczne i konsultacje">
+                        <h5 class="card-title">Wsparcie techniczne i konsultacje</h5>
+                        <p class="card-text">Zapewnianie wsparcia technicznego oraz doradztwa na każdym etapie projektu. Pomoc w doborze technologii, szkolenia z obsługi strony i bieżące wsparcie po jej stworzeniu. </p>
+                        <hr>
+                        <h6>Cennik:</h6>
+                        <ul class="list-unstyled">
+                            <li>Sklep podstawowy: <strong>od 0 zł</strong></li>
+                            <li>Sklep z zaawansowaną funkcjonalnością: <strong>od 0 zł</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <!-- Przycisk otwierający modal -->
+                        <a href="wsparcie.html" class="btn btn-secondary">
+                            Szczegóły
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+</section>
+
+    <!-- Stopka -->
+    <footer class="footer custom-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h2>O mnie</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p class="centered-paragraph">Nazywam się Miłosz Sowa i specjalizuję się w tworzeniu eleganckich oraz funkcjonalnych stron internetowych. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Jeśli potrzebujesz profesjonalnego wsparcia w projektowaniu swojej witryny, zapraszam do kontaktu.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Kontakt</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p><strong>Email:</strong> <a href="mailto:cyberalchemia@gmail.com">cyberalchemia@gmail.com</a></p>
+                    <p><strong>Telefon:</strong> <a href="tel:+48693859349">+48 693 859 349</a></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Znajdź mnie na</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        </a>
+                        <a href="https://x.com" target="_blank" class="social-button x">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" alt="X">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-button instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid #d3cacc; width: 100%; margin: 16px auto;">
+
+            <div class="text-center">
+                <p>&copy; <span id="currentYear"></span> Miłosz Sowa. Wszystkie prawa zastrzeżone.</p>
+
+                <div style="margin-bottom: -20px;"></div>
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+    <script src="script_form.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Alchemia by Miłosz Sowa - Fullstack Web Developing</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Nawigacja -->
+    
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.imgur.com/A3K2RQE.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-mnie.html">O mnie</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="uslugi.html">Usługi</a>
+                    </li>
+
+                    <div style="margin-left: -10px;"></div>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOferta" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOferta">
+                            <li><a class="dropdown-item" href="tworzenie.html">Projektowanie i tworzenie stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="optymalizacja.html">Optymalizacja i rozwój stron internetowych</a></li>
+                            <li><a class="dropdown-item" href="integracja.html">Integracja z systemami zewnętrznymi</a></li>
+                            <li><a class="dropdown-item" href="bezpieczenstwo.html">Wdrażenie systemów bezpieczeństwa</a></li>
+                            <li><a class="dropdown-item" href="wsparcie.html">Wsparcie techniczne i konsultacje</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nagłówek z tłem -->
+    <header class="hero-1 bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Portfolio</h1>
+<p>Zobacz moje wcześniejsze realizacje</p>
+        </div>
+    </header>
+
+<!-- Sekcja Portfolio -->
+<section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+        <!-- 1. Nagłówek z opisem -->
+        <h1 class="portfolio-section section-header text-center mb-3">Moje realizacje</h1>
+
+        <div style="margin-bottom: 30px;"></div>
+        
+        <div class="card no-hover">
+            <div class="card-body">
+                <p class="card-text">Oto wybrane projekty, nad którymi pracowałem. Zobacz, jak pomogłem moim klientom osiągnąć sukces w sieci. Każdy projekt jest unikalny i dostosowany do potrzeb klienta.</p>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 50px;"></div>
+        
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <div style="margin-bottom: 30px;"></div>
+        
+        <!-- 5. Filtrowanie projektów (Rozbudowane filtry) -->
+        <div class="portfolio-section text-center mb-4">
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('all')">Wszystkie</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('ecommerce')">E-commerce</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('webapp')">Aplikacje webowe</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('blog')">Blogi</button>
+            <button class="portfolio-section btn btn-outline-primary m-1" onclick="filterProjects('portfolio')">Portfolio</button>
+        </div>
+
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <div style="margin-bottom: 60px;"></div>
+
+        <!-- 2. Siatka projektów -->
+        <div class="row" id="portfolio-items">
+            <!-- Przykładowy projekt 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item webapp">
+                <div class="portfolio-section card">
+                    <img src="https://i.imgur.com/rJP4ULB.jpeg" alt="Projekt X" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Niepoprawny Dyplomata</h5>
+                        <p class="portfolio-section card-text">Projekt strony-wizytówki podcastu. Zbudowany z wykorzystaniem frameworka CSS Materialize.</p>
+                        <!-- 3. Opis projektu i CTA -->
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 1 -->
+
+            <!-- Modal ogólny -->
+            <div class="portfolio-section modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project1ModalLabel">Niepoprawny Dyplomata - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+            
+                        <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+            
+                        <div class="portfolio-section modal-body">
+            
+                            <!-- Obrazek z funkcjonalnością powiększania -->
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-0">
+                                <img 
+                src="https://i.imgur.com/rJP4ULB.jpeg" 
+                class="img-thumbnail mb-3" 
+                alt="Projekt 1 - Zdjęcie 1" 
+                style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal">
+                            
+                                <img 
+                                    src="https://i.imgur.com/uJnphnJ.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 2" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#imageModal2">
+                            
+                                <img 
+                                    src="https://i.imgur.com/E85iR6b.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 3" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#imageModal3">
+                            </div>
+            
+                            <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+                            
+                            <h5>Opis projektu:</h5>
+            <p>Ten projekt to propozycja nowoczesnej strony internetowej dedykowanej podcastowi o tematyce międzynarodowej, skupiającemu się na polityce, kulturze i dyplomacji. Strona została zaprojektowana z myślą o promowaniu odcinków podcastu, przyciąganiu nowych słuchaczy oraz budowaniu zaangażowanej społeczności.</p>
+            <h5>Technologie użyte:</h5>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>PHP</li>
+                <li>Google Fonts</li>
+            </ul>
+            <h5>Rezultaty:</h5>
+            <p>Projekt zdobył uznanie za intuicyjny design i funkcjonalność, co doprowadziło do zwiększenia świadomości marki podcastu oraz rozwojem jego obecności w przestrzeni cyfrowej.</p>
+                            
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- Modal dla obrazka -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/rJP4ULB.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt 1 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeImageModal" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/uJnphnJ.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt 1 - Zdjęcie 2 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeImageModal2" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/E85iR6b.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt 1 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeImageModal3" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Przykładowy projekt 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item webapp">
+                <div class="portfolio-section card">
+                    <img src="https://i.imgur.com/rBz5R1N.jpeg" alt="Projekt Y" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Wimax</h5>
+                        <p class="portfolio-section card-text">Projekt strony firmy zajmującej się systemami bezpieczeństwa. Zbudowany z wykorzystaniem PHP.</p>
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 2 -->
+            <div class="portfolio-section modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project2ModalLabel">Wimax - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+
+                        <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+
+                        <div class="portfolio-section modal-body">
+                            
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-0">
+                                <img 
+                src="https://i.imgur.com/rBz5R1N.jpeg" 
+                class="img-thumbnail mb-3" 
+                alt="Projekt 1 - Zdjęcie 1" 
+                style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#project2ImageModal">
+                            
+                                <img 
+                                    src="https://i.imgur.com/YGyJnAv.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 2" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#project2ImageModal2">
+                            
+                                <img 
+                                    src="https://i.imgur.com/GCBD9uW.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 3" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#project2ImageModal3">
+                            </div>
+
+                            <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+
+                            <h5>Opis projektu:</h5>
+<p>Projekt obejmował stworzenie propozycji nowoczesnej i responsywnej strony internetowej dla firmy zajmującej się projektowaniem oraz wdrażaniem zaawansowanych systemów bezpieczeństwa. Strona została zaprojektowana z myślą o profesjonalnym wizerunku marki, przejrzystej prezentacji oferty oraz łatwym kontakcie dla potencjalnych klientów.</p>
+<h5>Technologie użyte:</h5>
+<ul>
+    <li>HTML, CSS, JavaScript</li>
+    <li>PHP</li>
+    <li>Google Fonts</li>
+</ul>
+<h5>Rezultaty:</h5>
+<p>Projekt spotkał się z pozytywnym odbiorem klienta, wyróżniając się eleganckim designem i intuicyjną nawigacją. Strona stanowiła przykład skutecznego narzędzia w generowaniu zapytań ofertowych oraz wzmacnianiu wizerunku firmy w branży systemów bezpieczeństwa.</p>
+
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla pierwszego obrazka -->
+<div class="modal fade" id="project2ImageModal" tabindex="-1" aria-labelledby="project2ImageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/rBz5R1N.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 1 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject2ImageModal1" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dla drugiego obrazka -->
+<div class="modal fade" id="project2ImageModal2" tabindex="-1" aria-labelledby="project2ImageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/YGyJnAv.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 2 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject2ImageModal2" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dla trzeciego obrazka -->
+<div class="modal fade" id="project2ImageModal3" tabindex="-1" aria-labelledby="project2ImageModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/GCBD9uW.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 3 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject2ImageModal3" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Przykładowy projekt 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-section portfolio-item webapp">
+                <div class="portfolio-section card">
+                    <img src="https://i.imgur.com/7DxF86q.jpeg" alt="Projekt Y" class="portfolio-section card-img-top img-fluid">
+                    <div class="portfolio-section card-body">
+                        <h5 class="portfolio-section card-title">Polskie Armaty</h5>
+                        <p class="portfolio-section card-text">Strona informacyjna klubu piłkarskiego. Zbudowana z wykorzystaniem frameworka CSS Bootstrap.</p>
+                        <button type="button" class="portfolio-section btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                            Zobacz szczegóły
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla Projektu 3 -->
+            <div class="portfolio-section modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+                <div class="portfolio-section modal-dialog modal-lg">
+                    <div class="portfolio-section modal-content">
+                        <div class="portfolio-section modal-header">
+                            <h5 class="portfolio-section modal-title" id="project3ModalLabel">Polskie Armaty - Szczegóły</h5>
+                            <button type="button" class="portfolio-section btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+                        </div>
+
+                        <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+
+                        <div class="portfolio-section modal-body">
+                            
+                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-0">
+                                <img 
+                src="https://i.imgur.com/7DxF86q.jpeg" 
+                class="img-thumbnail mb-3" 
+                alt="Projekt 1 - Zdjęcie 1" 
+                style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;" 
+                data-bs-toggle="modal" 
+                data-bs-target="#project3ImageModal">
+                            
+                                <img 
+                                    src="https://i.imgur.com/FrAk06G.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 2" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#project3ImageModal2">
+                            
+                                <img 
+                                    src="https://i.imgur.com/Eh3CvVV.jpeg" 
+                                    class="img-thumbnail mb-3" 
+                                    alt="Projekt 1 - Zdjęcie 3" 
+                                    style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); width: 300px; cursor: pointer; transition: opacity 0.5s ease;"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#project3ImageModal3">
+                            </div>
+
+                            <hr style="border-top: 2px solid #000000; width: 70%; margin: 16px auto;">
+
+                            <h5>Opis projektu:</h5>
+<p>Stworzenie projektu dynamicznego portalu internetowego dla klubu piłkarskiego, który może służyć jako centralne miejsce dla fanów klubu piłkarskiego. Strona została zaprojektowana tak, aby prezentować historię klubu i inne informacje z nim związane.</p>
+<h5>Technologie użyte:</h5>
+<ul>
+    <li>WordPress</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>PHP</li>
+    <li>Google Fonts</li>
+</ul>
+<h5>Rezultaty:</h5>
+<p>Projekt zdobył uznanie za atrakcyjny design i funkcjonalność. Portal może przyczynić się do zwiększenia zaangażowania społeczności oraz poprawy komunikacji klubu z fanami poprzez integrację mediów społecznościowych i możliwość zapisu do newslettera.</p>
+
+                        </div>
+                        <div class="portfolio-section modal-footer">
+                            <button type="button" class="portfolio-section btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal dla pierwszego obrazka -->
+<div class="modal fade" id="project3ImageModal" tabindex="-1" aria-labelledby="project3ImageModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/7DxF86q.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 1 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject3ImageModal1" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dla drugiego obrazka -->
+<div class="modal fade" id="project3ImageModal2" tabindex="-1" aria-labelledby="project3ImageModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/FrAk06G.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 2 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject3ImageModal2" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dla trzeciego obrazka -->
+<div class="modal fade" id="project3ImageModal3" tabindex="-1" aria-labelledby="project3ImageModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img 
+                    src="https://i.imgur.com/Eh3CvVV.jpeg" 
+                    class="img-fluid" 
+                    alt="Projekt Y - Zdjęcie 3 - Pełny Rozmiar">
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    id="closeProject3ImageModal3" 
+                    data-bs-dismiss="modal">Zamknij</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div style="margin-bottom: 30px;"></div>
+
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+        <!-- 4. Technologie, które wykorzystujesz -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 class="portfolio-section section-header text-center">Wykorzystywane technologie</h1>
+        
+                <div style="margin-bottom: 30px;"></div>
+        
+                <div class="card no-hover" style="position: relative !important; right: -10px !important;">
+                    <div class="card-body">
+                        <div class="portfolio-section d-flex justify-content-center flex-wrap grid-container">
+                            <!-- HTML -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML" width="50" class="portfolio-section m-2">
+                                <h5>HTML</h5>
+                                <p class="text-muted">HTML to podstawowy język tworzenia struktury stron internetowych. Pozwala definiować treść, odnośniki i elementy wizualne.</p>
+                            </div>
+                            <!-- CSS -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/css-icon.png" alt="CSS" width="50" class="portfolio-section m-2">
+                                <h5>CSS</h5>
+                                <p class="text-muted">CSS odpowiada za wygląd i układ elementów na stronie, w tym kolory, czcionki, odstępy i responsywność.</p>
+                            </div>
+                            <!-- JavaScript -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" width="50" class="portfolio-section m-2">
+                                <h5>JavaScript</h5>
+                                <p class="text-muted">JavaScript umożliwia dynamiczne interakcje na stronach, takie jak animacje, obsługa formularzy czy zaawansowane funkcje.</p>
+                            </div>
+                            <!-- PHP -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968332.png" alt="PHP" width="50" class="portfolio-section m-2">
+                                <h5>PHP</h5>
+                                <p class="text-muted">PHP to język skryptowy działający po stronie serwera, stosowany do obsługi dynamicznych stron internetowych i baz danych.</p>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png" alt="MySQL" width="50" class="portfolio-section m-2">
+                                <h5>MySQL</h5>
+                                <p class="text-muted">MySQL to system zarządzania bazami danych, używany do przechowywania i organizowania danych na stronach internetowych.</p>
+                            </div>
+                            <!-- WordPress -->
+                            <div class="col-6 col-md-4 col-lg-2 text-center mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="WordPress" width="50" class="portfolio-section m-2">
+                                <h5>WordPress</h5>
+                                <p class="text-muted">WordPress to system zarządzania treścią (CMS), pozwalający na łatwe tworzenie i zarządzanie stronami internetowymi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+       
+        <hr style="border-top: 3px solid #d3cacc; width: 70%; margin: 16px auto;">
+        
+        <!-- 6. Sekcja z opiniami klientów -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 class="portfolio-section section-header text-center">Opinie moich klientów</h1>
+                <div id="customerTestimonials" class="portfolio-section carousel slide" data-bs-ride="carousel">
+                    <!-- Kropki nawigacyjne -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#customerTestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#customerTestimonials" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+        
+                    <div class="portfolio-section carousel-inner">
+                        <!-- Pierwszy blok z cytatem w karcie -->
+                        <div class="portfolio-section carousel-item active text-center" data-bs-interval="10000">
+                            <div class="card mx-auto" style="max-width: 600px;">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-4">
+                                        <p>"Miłosz stworzył dla nas niesamowitą stronę e-commerce. Jesteśmy bardzo zadowoleni z efektów!"</p>
+                                        
+                                        <div style="margin-bottom: 50px;"></div>
+                                        
+                                        <footer class="blockquote-footer neon-text">Jan Kowalski, CEO w Firmie Y</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Drugi blok z cytatem w karcie -->
+                        <div class="portfolio-section carousel-item text-center" data-bs-interval="10000">
+                            <div class="card mx-auto" style="max-width: 600px;">
+                                <div class="card-body">
+                                    <blockquote class="blockquote mb-4">
+                                        <p>"Współpraca z Miłoszem była niezwykle owocna. Jego profesjonalizm przekroczył nasze oczekiwania."</p>
+                                        
+                                        <div style="margin-bottom: 50px;"></div>
+                                        
+                                        <footer class="blockquote-footer neon-text">Anna Nowak, Manager w Firmie Z</footer>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 100px;"></div>
+        
+        <!-- 7. Przyciski CTA -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="index.html#contactForm" class="portfolio-section btn btn-lg btn-success">Skontaktuj się ze mną</a>
+            </div>
+        </div>
+
+</section>
+
+<!-- Skrypt JavaScript do filtrowania projektów -->
+<script>
+    function filterProjects(category) {
+        let projects = document.querySelectorAll('.portfolio-item');
+        projects.forEach(project => {
+            if (category === 'all' || project.classList.contains(category)) {
+                project.style.display = 'block';
+            } else {
+                project.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+<script>
+const imageModalElement = document.getElementById('imageModal');
+const imageModal2Element = document.getElementById('imageModal2');
+const imageModal3Element = document.getElementById('imageModal3');
+
+const projectModalElement = document.getElementById('project1Modal');
+
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka
+imageModalElement.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka
+    const projectModal = new bootstrap.Modal(projectModalElement);
+    projectModal.show();
+});
+
+imageModal2Element.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 2
+    const projectModal = new bootstrap.Modal(projectModalElement);
+    projectModal.show();
+});
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 3
+imageModal3Element.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 3
+    const projectModal = new bootstrap.Modal(projectModalElement);
+    projectModal.show();
+});
+</script>
+
+<script>
+// Pobierz elementy modalne obrazków dla Projektu 2
+const project2ImageModal1 = document.getElementById('project2ImageModal');
+const project2ImageModal2 = document.getElementById('project2ImageModal2');
+const project2ImageModal3 = document.getElementById('project2ImageModal3');
+
+// Pobierz element głównego modala dla Projektu 2
+const project2ModalElement = document.getElementById('project2Modal');
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 1
+project2ImageModal1.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 1
+    const project2Modal = new bootstrap.Modal(project2ModalElement);
+    project2Modal.show();
+});
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 2
+project2ImageModal2.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 2
+    const project2Modal = new bootstrap.Modal(project2ModalElement);
+    project2Modal.show();
+});
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 3
+project2ImageModal3.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 3
+    const project2Modal = new bootstrap.Modal(project2ModalElement);
+    project2Modal.show();
+});
+</script>
+
+<script>
+const project3ImageModal1 = document.getElementById('project3ImageModal');
+const project3ImageModal2 = document.getElementById('project3ImageModal2');
+const project3ImageModal3 = document.getElementById('project3ImageModal3');
+
+// Pobierz element głównego modala dla Projektu 3
+const project3ModalElement = document.getElementById('project3Modal');
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 1
+project3ImageModal1.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 1
+    const project3Modal = new bootstrap.Modal(project3ModalElement);
+    project3Modal.show();
+});
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 2
+project3ImageModal2.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 2
+    const project3Modal = new bootstrap.Modal(project3ModalElement);
+    project3Modal.show();
+});
+
+// Dodaj nasłuchiwanie zdarzeń dla modala obrazka 3
+project3ImageModal3.addEventListener('hidden.bs.modal', function () {
+    // Otwórz modal główny po zamknięciu modala obrazka 3
+    const project3Modal = new bootstrap.Modal(project3ModalElement);
+    project3Modal.show();
+});
+</script>
+
+    <!-- Stopka -->
+    <footer class="footer custom-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h2>O mnie</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p class="centered-paragraph">Nazywam się Miłosz Sowa i specjalizuję się w tworzeniu eleganckich oraz funkcjonalnych stron internetowych. 
+                        
+                        <div style="margin-bottom: 20px;"></div>
+                        
+                        Jeśli potrzebujesz profesjonalnego wsparcia w projektowaniu swojej witryny, zapraszam do kontaktu.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Kontakt</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <p><strong>Email:</strong> <a href="mailto:cyberalchemia@gmail.com">cyberalchemia@gmail.com</a></p>
+                    <p><strong>Telefon:</strong> <a href="tel:+48693859349">+48 693 859 349</a></p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h2>Znajdź mnie na</h2>
+
+                    <hr style="border-top: 1px solid #d3cacc; width: 70%; margin: 16px auto;">
+
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com" target="_blank" class="social-button facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                        </a>
+                        <a href="https://x.com" target="_blank" class="social-button x">
+                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-black-icon.png" alt="X">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-button instagram">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid #d3cacc; width: 100%; margin: 16px auto;">
+
+            <div class="text-center">
+                <p>&copy; <span id="currentYear"></span> Miłosz Sowa. Wszystkie prawa zastrzeżone.</p>
+
+                <div style="margin-bottom: -20px;"></div>
+
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+    <script src="script_form.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

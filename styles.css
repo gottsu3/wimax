@@ -1,0 +1,1834 @@
+body {
+    background-color: #2c3e50;
+    color: #e74c3c;
+    font-family: 'Nunito', sans-serif;
+    background: conic-gradient(from 20deg, #3d6b81,#4c758c , #5a8f9f, #2c3e50);
+    padding-top: 75px; 
+}
+
+.overlay-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Przyciemnione tło */
+    z-index: 1; /* Nakładka nad tłem, ale pod treścią */
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Początkowa przezroczystość */
+    }
+    to {
+        opacity: 1; /* Końcowa pełna widoczność */
+    }
+}
+
+/* Hero section */
+.hero {
+    margin: 0; /* Usuń marginesy */
+    padding: 0; /* Usuń dodatkowy padding, jeśli niepotrzebny */
+    width: 100%;
+    height: 150%;
+    background: url('https://i.imgur.com/1zuyw8k.jpeg') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    overflow: hidden;
+    color: #ecf0f1;
+    text-align: center;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 8s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Hero section */
+.hero-1 {
+    margin: 0; /* Usuń marginesy */
+    padding: 0; /* Usuń dodatkowy padding, jeśli niepotrzebny */
+    width: 100%;
+    height: 150%;
+    background: url('https://i.imgur.com/pIR5u2U.jpeg') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    overflow: hidden;
+    color: #ecf0f1;
+    text-align: center;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 8s ease-in-out;
+    opacity: 0.8;
+}
+
+.hero-2 {
+    margin: 0; /* Usuń marginesy */
+    padding: 0; /* Usuń dodatkowy padding, jeśli niepotrzebny */
+    width: 100%;
+    height: 150%;
+    background: url('https://i.imgur.com/debnapB.jpeg') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    overflow: hidden;
+    color: #ecf0f1;
+    text-align: center;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 8s ease-in-out;
+    opacity: 0.8;
+}
+
+.hero-3 {
+    margin: 0; /* Usuń marginesy */
+    padding: 0; /* Usuń dodatkowy padding, jeśli niepotrzebny */
+    width: 100%;
+    height: 150%;
+    background: url('https://i.imgur.com/1zuyw8k.jpeg') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    overflow: hidden;
+    color: #ecf0f1;
+    text-align: center;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 8s ease-in-out;
+    opacity: 0.8;
+}
+
+.hero-4 {
+    margin: 0; /* Usuń marginesy */
+    padding: 0; /* Usuń dodatkowy padding, jeśli niepotrzebny */
+    width: 100%;
+    height: 150%;
+    background: url('https://i.imgur.com/UyLMUXs.jpeg') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    overflow: hidden;
+    color: #ecf0f1;
+    text-align: center;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 8s ease-in-out;
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 0.9; /* Zmniejsza przezroczystość obrazka przy najechaniu */
+}
+
+.hero-2 h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900; /* Zmiana na bardziej wyraźny font-weight */
+    font-style: italic;
+    margin-bottom: 0.5em; /* Margines poniżej nagłówka */
+    animation: textFade 20s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.hero-3 h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900; /* Zmiana na bardziej wyraźny font-weight */
+    font-style: italic;
+    margin-bottom: 0.5em; /* Margines poniżej nagłówka */
+    animation: textFade 20s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.hero-4 h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900; /* Zmiana na bardziej wyraźny font-weight */
+    font-style: italic;
+    margin-bottom: 0.5em; /* Margines poniżej nagłówka */
+    animation: textFade 20s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.hero h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900; /* Zmiana na bardziej wyraźny font-weight */
+    font-style: italic;
+    margin-bottom: 0.5em; /* Margines poniżej nagłówka */
+    animation: textFade 20s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.hero-1 h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900; /* Zmiana na bardziej wyraźny font-weight */
+    font-style: italic;
+    margin-bottom: 0.5em; /* Margines poniżej nagłówka */
+    animation: textFade 20s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+}
+
+.portfolio-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.portfolio-section p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.portfolio-section .card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 1s, box-shadow 1s;
+}
+
+.portfolio-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-section .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.portfolio-section .card-body {
+    text-align: center;
+}
+
+.portfolio-section .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.portfolio-section .card-text {
+    color: #666;
+}
+
+.portfolio-section .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.portfolio-section .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Filtry projektów */
+.portfolio-section .btn-outline-primary {
+    border: 2px solid #007bff;
+    color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-section .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Sekcja technologii */
+.portfolio-section .technologies {
+    margin-top: 30px;
+}
+
+.portfolio-section .technologies img {
+    transition: transform 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.portfolio-section .technologies img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* Opinie klientów */
+.portfolio-section .carousel {
+    margin-top: 30px;
+}
+
+.portfolio-section .carousel-inner {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    width: 100%; /* lub inna szerokość, np. 90% */
+    max-width: 800px; /* Ustaw maksymalną szerokość, jeśli chcesz */
+    margin: 0 auto; /* Wyśrodkowanie poziome */
+}
+
+.portfolio-section .carousel-item {
+    padding: 15px;
+    text-align: center;
+}
+
+.portfolio-section .carousel blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+}
+
+.portfolio-section .carousel footer {
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Stopka modalna */
+.portfolio-section .modal-footer {
+    border-top: none;
+}
+
+.portfolio-section .modal-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Przyciski CTA */
+.portfolio-section .btn-success {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.portfolio-section .btn-success:hover {
+    background-color: #28a745;
+}
+
+/* Ikony technologii */
+.portfolio-section .technologies img {
+    width: 50px;
+    margin: 0 15px;
+}
+
+/* GitHub i inne linki */
+.portfolio-section .btn-dark {
+    background-color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.portfolio-section .btn-dark:hover {
+    background-color: #555;
+}
+
+.no-hover {
+    transition: none; /* Wyłącza wszelkie przejścia */
+}
+
+.no-hover:hover {
+    transform: scale(1) !important; /* Wyłącza efekt powiększania */
+}
+
+@keyframes textFade {
+    0%, 100% {
+        opacity: 0; /* Tekst jest niewidoczny na początku i na końcu */
+        transform: translateY(-10px); /* Przesunięcie tekstu w górę */
+    }
+    50% {
+        opacity: 1; /* Tekst staje się w pełni widoczny w środku animacji */
+        transform: translateY(0); /* Powrót tekstu do pierwotnej pozycji */
+    }
+}
+
+.hero p {
+    font-family: 'Nunito', sans-serif; /* Czcionka dla tekstu w sekcji hero */
+    font-size: 1em; /* Zwiększenie rozmiaru czcionki */
+    animation: textFade 15s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.hero-1 p {
+    font-family: 'Nunito', sans-serif; /* Czcionka dla tekstu w sekcji hero */
+    font-size: 1em; /* Zwiększenie rozmiaru czcionki */
+    animation: textFade 15s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.hero-2 p {
+    font-family: 'Nunito', sans-serif; /* Czcionka dla tekstu w sekcji hero */
+    font-size: 1em; /* Zwiększenie rozmiaru czcionki */
+    animation: textFade 15s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.hero-3 p {
+    font-family: 'Nunito', sans-serif; /* Czcionka dla tekstu w sekcji hero */
+    font-size: 1em; /* Zwiększenie rozmiaru czcionki */
+    animation: textFade 15s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.hero-4 p {
+    font-family: 'Nunito', sans-serif; /* Czcionka dla tekstu w sekcji hero */
+    font-size: 1em; /* Zwiększenie rozmiaru czcionki */
+    animation: textFade 15s ease-in infinite;
+    background: linear-gradient(120deg, #ffffff, #ffffff);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif; 
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: 'Exo 2', sans-serif; 
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 1em; /* Zapewnienie jednolitego rozmiaru czcionki dla paragrafów */
+}
+
+p a {
+    text-decoration: none; /* Usuwa podkreślenie */
+    color: inherit; /* Zachowuje domyślny kolor tekstu */
+    font-size: 1.2em; 
+}
+
+.section-header {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.5em; /* Rozmiar czcionki */
+    margin-bottom: 0.5em; /* Margines dolny */
+    transition: color 5s, text-shadow 4s, background 4s; /* Płynne przejścia dla koloru tekstu, cienia i tła */
+    color: #4d6d8d;
+    background: linear-gradient(120deg, #e74c3c, #e74c3c);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent; /* Ukrywa tekst, wypełnia gradientem */
+}
+
+.section-header-custom {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.5em; /* Rozmiar czcionki */
+    margin-bottom: 0.5em; /* Margines dolny */
+    transition: color 5s, text-shadow 4s, background 4s; /* Płynne przejścia dla koloru tekstu, cienia i tła */
+    color: #4d6d8d;
+    background: linear-gradient(120deg,#d9665b , #e74c3c);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: text; /* Przycina tło do tekstu */
+    -webkit-text-fill-color: transparent; /* Ukrywa tekst, wypełnia gradientem */
+}
+
+table {
+    width: 100%; /* Tabela zajmuje całą szerokość kontenera */
+    border-collapse: collapse; /* Usuwa przerwy między komórkami */
+}
+
+th, td {
+    padding: 12px; /* Dodaje przestrzeń wewnętrzną */
+    text-align: center; /* Wyśrodkowuje tekst w komórkach */
+    vertical-align: middle; /* Wyśrodkowanie w pionie */
+    word-wrap: break-word; /* Pozwala na dzielenie długich wyrazów */
+}
+
+@media (max-width: 768px) {
+    .container-2 .card {
+        max-width: 90% !important; /* !important wymusza priorytet */
+        padding: 15px; /* Zmniejszenie paddingu */
+        margin: 15px auto; /* Dopasowanie marginesu */
+        font-size: 0.95rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 90% !important; /* Ustawia maksymalną szerokość karty na 90% */
+        padding: 15px; /* Zmniejszenie paddingu */
+        margin: 15px auto; /* Dopasowanie marginesu */
+        font-size: 0.95rem; /* Zmniejszenie rozmiaru czcionki */
+    }
+
+    /* Dostosowanie obrazków */
+    .card .img-thumbnail {
+        width: 100% !important; /* Obrazki zajmują całą szerokość karty */
+        max-width: 300px; /* Maksymalna szerokość obrazka */
+        margin: 0 auto; /* Centrowanie obrazków */
+    }
+
+    /* Dostosowanie układu obrazków w jednym rzędzie */
+    .row.g-3 .col-12 {
+        flex: 0 0 100%; /* Ustawia każdy obrazek na pełną szerokość */
+        max-width: 100%; /* Upewnia się, że obrazki zajmują 100% szerokości */
+        margin-bottom: 16px; /* Dodanie marginesu między obrazkami */
+    }
+
+    /* Dostosowanie dla modalów */
+    .modal-dialog {
+        max-width: 90% !important; /* Ustawienie szerokości modalów na 90% */
+        margin: 0 auto; /* Centrowanie modalów */
+    }
+}
+
+/* Dla tabletów (maksymalna szerokość 768px) */
+@media (max-width: 768px) {
+    .card {
+        max-width: 200px;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Zmniejszony rozmiar tytułu */
+    }
+
+    .section-heading {
+        font-size: 1.25rem; /* Mniejsze nagłówki */
+    }
+
+    img {
+        max-width: 100px;
+        height: auto;
+    }
+
+    .table {
+        font-size: 0.9rem; /* Zmniejszony rozmiar tekstu tabeli */
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Dla smartfonów (maksymalna szerokość 576px) */
+@media (max-width: 576px) {
+    .card {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Jeszcze mniejszy tytuł */
+    }
+
+    .section-heading {
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .table {
+        font-size: 0.8rem; /* Dostosowanie tabeli do mniejszych ekranów */
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        padding: 8px 12px; /* Mniejsze przyciski */
+    }
+}
+
+thead th {
+    background-color: #b1adae; /* Dodaje tło do nagłówka */
+    font-weight: bold; /* Wyróżnia tekst w nagłówkach */
+    text-transform: uppercase; /* Nagłówki z dużymi literami */
+}
+
+tr:nth-child(even) {
+    background-color: #d3cacc; /* Alternatywny kolor wierszy */
+}
+
+tr:hover {
+    background-color: #b1b1b1; /* Efekt hover dla wiersza */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-success {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;  /* Wyśrodkowanie w pionie */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+}
+
+
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 12px; /* Zmniejszenie rozmiaru tekstu */
+    }
+    .table th, .table td {
+        padding: 8px; /* Zmniejszenie odstępów w komórkach */
+    }
+    .table thead th {
+        white-space: nowrap; /* Zapobiega łamaniu tekstu w nagłówkach */
+    }
+    .table-responsive {
+        overflow-x: auto; /* Zapewnia przewijanie poziome w przypadku bardzo małych ekranów */
+    }
+}
+
+.custom-card-1-container {
+    margin-top: 20px; /* Możesz dostosować tę wartość */
+    margin-bottom: 80px;
+}
+
+.elegant-text {
+    font-size: 1.2rem; /* Zwiększenie rozmiaru czcionki */
+    line-height: 1.6;  /* Zwiększenie odstępu między liniami */
+    font-family: 'Nunito', sans-serif; /* Elegancka czcionka */
+    color: #333; /* Kolor ciemnoszary, aby tekst był wyraźny */
+    background: linear-gradient(45deg, #f8f9fa, #e2e3e5); /* Subtelny gradient w tle */
+    padding: 15px; /* Odstępy wewnątrz elementu */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Cień wokół tekstu */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15); /* Cień tekstu */
+    transition: all 1s ease; /* Efekt przejścia przy najechaniu */
+}
+
+.elegant-text:hover {
+    background: #e2e3e5; /* Subtelna zmiana tła po najechaniu */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2); /* Mocniejszy cień po najechaniu */
+}
+
+.elegant-list {
+    list-style-type: none; /* Usunięcie domyślnych punktów listy */
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif; /* Użycie eleganckiej czcionki */
+    font-size: 1.1rem;
+    line-height: 1.8; /* Zwiększenie odstępu między liniami */
+}
+
+.elegant-list li {
+    position: relative;
+    padding-left: 25px; /* Odstęp dla ikonki przed tekstem */
+    margin-bottom: 15px; /* Przestrzeń między punktami */
+    color: #333; /* Kolor tekstu */
+}
+
+.elegant-list li::before {
+    content: '\2022'; /* Unicode dla kropki */
+    font-size: 1.5rem; /* Rozmiar kropki */
+    color: #007bff; /* Kolor kropki */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.elegant-list li:hover {
+    transform: translateX(5px); /* Subtelny efekt przesunięcia w prawo przy najechaniu */
+    transition: transform 1s ease;
+}
+
+.elegant-list li strong {
+    font-weight: bold; /* Pogrubienie nazw */
+    color: #007bff; /* Kolor dla nazw */
+}
+
+.elegant-list li:hover strong {
+    color: #0056b3; /* Ciemniejszy kolor dla nazw po najechaniu */
+}
+
+
+.custom-navbar {
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-navbar .navbar-brand img {
+    max-height: 50px;
+    transition: transform 1s ease-in-out;
+}
+
+.custom-navbar .navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.custom-navbar .nav-link {
+    color: #e4e4e4;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: color 1s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    color: #e74c3c;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: #333;
+    border: none;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-navbar .dropdown-item {
+    color: #e4e4e4;
+    transition: background-color 1s, color 1s;
+}
+
+.custom-navbar .dropdown-item:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.navbar-toggler {
+    border: 2px  #d3cacc; /* Dodanie białego obramowania */
+    border-radius: 5px; /* Zaokrąglenie rogów obramowania */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    filter: drop-shadow(0px 2px 2px rgba(255, 255, 255, 0.2)); /* Dodanie delikatnego cienia dla efektu głębi */
+}
+
+
+@media (max-width: 991.98px) {
+    .custom-navbar .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .custom-navbar .nav-link {
+        padding: 0.5rem 0;
+    }
+
+    .custom-navbar .dropdown-menu {
+        text-align: left;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-body {
+    opacity: 0; /* Ukryj kartę na początku */
+    animation: fadeInUp 8s ease forwards; /* Dodaj animację z opóźnieniem */
+}
+
+img:hover {
+    transform: scale(1.1); /* Powiększenie obrazka o 20% */
+}
+
+.img-thumbnail:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    transform: scale(1.02); /* Delikatne powiększenie */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); /* Lekko zwiększone cienie */
+    opacity: 0.9; /* Subtelna zmiana przezroczystości */
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -55px; /* Odległość od dołu karuzeli */
+    left: 0%;
+    transform: translateX(-0%);
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators button {
+    width: 12px !important; /* Szerokość kropki */
+    height: 12px !important; /* Wysokość kropki */
+    margin: 4px !important; /* Odstęp między kropkami */
+    background-color: black !important; /* Kolor kropek */
+    border: none !important;
+    border-radius: 50% !important; /* Okrągłe kropki */
+    opacity: 0.7 !important; /* Przezroczystość kropek */
+    cursor: pointer !important; /* Kursor wskaźnik */
+}
+
+.carousel-indicators .active {
+    background-color: white !important; /* Kolor aktywnej kropki */
+    opacity: 1 !important; /* Pełna przezroczystość dla aktywnej kropki */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie przycisków */
+    gap: 10px; /* Odstęp między przyciskami */
+    margin: 20px 0; /* Odstęp od góry i dołu */
+}
+
+.social-button {
+    text-decoration: none;
+    color: white; /* Kolor ikon */
+    background-color: #343a40; /* Tło przycisków */
+    padding: 10px;
+    border-radius: 50%; /* Zaokrąglenie przycisków */
+    font-size: 20px; /* Rozmiar ikon */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 2s ease;
+}
+
+.social-button:hover {
+    background-color: #495057; /* Zmiana koloru tła po najechaniu */
+}
+
+.social-button img {
+    width: 25px; /* Szerokość ikony */
+    height: 25px; /* Wysokość ikony */
+}
+
+.social-button:hover {
+    background-color: #495057; /* Zmiana koloru tła po najechaniu */
+}
+
+.x { background-color: #8b8b8b; } /* Kolor tła dla ikony X */
+.instagram { background-color: #e1306c; } /* Kolor tła dla ikony Instagrama */
+.facebook { background-color: #4267b2; }
+
+.portfolio-item img {
+    width: 100%; /* Ustawia obrazki, aby zajmowały całą szerokość kontenera */
+    height: auto; /* Zachowuje proporcje obrazka */
+}
+
+#portfolio .card-img-top {
+    transition: transform 3s ease, border-radius 2s ease; /* Dodanie płynnego przejścia dla transformacji i zaokrąglenia */
+}
+
+#portfolio .card-img-top:hover {
+    transform: scale(0.90); /* Powiększenie obrazka przy najechaniu */
+    border-radius: 15px; /* Zaokrąglenie krawędzi obrazka przy najechaniu */
+    opacity: 0.9; /* Opcjonalnie: zmniejszenie przezroczystości */
+}
+
+#about .card img {
+    transition: transform 3s ease, border-radius 2s ease; /* Dodanie płynnego przejścia dla transformacji i zaokrąglenia */
+}
+
+#about .card img:hover {
+    transform: scale(0.90); /* Powiększenie obrazka przy najechaniu */
+    border-radius: 15px; /* Zaokrąglenie krawędzi obrazka przy najechaniu */
+    opacity: 0.9; /* Opcjonalnie: zmniejszenie przezroczystości */
+}
+
+#services .card-img-top {
+    transition: transform 3s ease, border-radius 2s ease; /* Płynne przejście dla transformacji i zaokrąglenia */
+    transform-origin: center; /* Ustawienie środka jako punktu transformacji */
+}
+
+#services .card-img-top:hover {
+    transform: scale(0.9); /* Powiększenie obrazka przy najechaniu */
+    border-radius: 15px; /* Zaokrąglenie krawędzi obrazka przy najechaniu */
+    opacity: 0.9; /* Zmniejszenie przezroczystości obrazka przy najechaniu */
+}
+
+#services .card {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* Cień dla kart */
+    transition: box-shadow 1.5s ease; /* Płynne przejście dla cienia */
+}
+
+#services .card:hover {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8); /* Zwiększenie cienia przy najechaniu */
+}
+
+
+
+#portfolio .card {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* Cień dla kart */
+    transition: box-shadow 1.5s ease; /* Płynne przejście dla cienia */
+}
+
+#portfolio .card:hover {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8); /* Zwiększenie cienia przy najechaniu */
+}
+
+#about .card {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* Cień dla kart */
+    transition: box-shadow 1.5s ease; /* Płynne przejście dla cienia */
+}
+
+#about .card:hover {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8); /* Zwiększenie cienia przy najechaniu */
+}
+
+#blog .card {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* Cień dla kart */
+    transition: box-shadow 1.5s ease; /* Płynne przejście dla cienia */
+}
+
+#blog .card:hover {
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8); /* Zwiększenie cienia przy najechaniu */
+}
+
+#blog .card-img-top {
+    transition: transform 3s ease, border-radius 2s ease; /* Płynne przejście dla transformacji i zaokrąglenia */
+    transform-origin: center; /* Ustawienie środka jako punktu transformacji */
+}
+
+#blog .card-img-top:hover {
+    transform: scale(0.9); /* Powiększenie obrazka przy najechaniu */
+    border-radius: 15px; /* Zaokrąglenie krawędzi obrazka przy najechaniu */
+    opacity: 0.9; /* Zmniejszenie przezroczystości obrazka przy najechaniu */
+}
+
+.portfolio-section .modal {
+    transition: transform 3s ease, opacity 2.5s ease;
+}
+
+.portfolio-section .modal.show {
+    transform: scale(1.05); /* Powiększa modal o 2% podczas hover */
+    opacity: 0,7;
+    transition: transform 3s ease, opacity 2.5s ease;
+}
+
+/* Efekt hover na backdrop modalu */
+.modal-backdrop {
+    transition: opacity 2s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-section .modal-backdrop.show {
+    opacity: 0.5; /* Przyciemnia tło podczas hover na modal */
+}
+
+.modal-body img {
+    border-radius: 15px; /* Dostosuj wartość w zależności od preferencji */
+}
+
+.portfolio-section .full-resolution-image {
+    max-width: 90%;   /* Obrazek wypełnia szerokość modal, jeśli potrzeba */
+    max-height: 90%;  /* Obrazek wypełnia wysokość modal, jeśli potrzeba */
+    object-fit: contain; /* Zapewnia, że obrazek zachowuje proporcje, dopasowując się do rozmiaru modal */
+    cursor: pointer;   /* Zmienia kursor na wskaźnik po najechaniu */
+}
+
+.portfolio-section .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 90%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: 0 auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: fixed;  /* Zmiana z relative na fixed, aby modal był na stałe widoczny */
+    top: 50%;  /* Wyśrodkowanie pionowe */
+    left: 50%;  /* Wyśrodkowanie poziome */
+    transform: translate(-50%, -50%); /* Przesunięcie, aby idealnie wyśrodkować */
+    border-radius: 15px;
+    padding: 20px;  /* Dodaje przestrzeń między modalem a krawędzią ekranu */
+    z-index: 1050; /* Upewnia się, że modal jest na wierzchu */
+}
+
+.portfolio-section .btn-success {
+    background-color: #28a745; /* Kolor tła */
+    border: none;              /* Usunięcie obramowania */
+    color: #fff;               /* Kolor tekstu */
+    padding: 15px 30px;        /* Wewnętrzne marginesy dla większego przycisku */
+    font-size: 1.25rem;        /* Zwiększenie rozmiaru czcionki */
+    border-radius: 8px;        /* Zaokrąglone krawędzie */
+    transition: all 0.3s ease; /* Płynne przejście przy najechaniu */
+}
+
+.portfolio-section .btn-success:hover {
+    background-color: #218838; /* Kolor tła przy najechaniu */
+    transform: scale(1.05);    /* Efekt powiększenia przy najechaniu */
+}
+
+.modal {
+    transition: transform 3s ease, opacity 2.5s ease;
+}
+
+.modal.show {
+    transform: scale(1.05); /* Powiększa modal o 2% podczas hover */
+    opacity: 0,7;
+    transition: transform 3s ease, opacity 2.5s ease;
+}
+
+/* Efekt hover na backdrop modalu */
+.modal-backdrop {
+    transition: opacity 2s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-backdrop.show {
+    opacity: 0.5; /* Przyciemnia tło podczas hover na modal */
+}
+
+.modal-body img {
+    border-radius: 15px; /* Dostosuj wartość w zależności od preferencji */
+}
+
+.full-resolution-image {
+    max-width: 90%;   /* Obrazek wypełnia szerokość modal, jeśli potrzeba */
+    max-height: 90%;  /* Obrazek wypełnia wysokość modal, jeśli potrzeba */
+    object-fit: contain; /* Zapewnia, że obrazek zachowuje proporcje, dopasowując się do rozmiaru modal */
+    cursor: pointer;   /* Zmienia kursor na wskaźnik po najechaniu */
+}
+
+.portfolio-section.modal-body {
+    max-height: 70vh; /* Maksymalna wysokość modala (70% wysokości widoku) */
+    overflow-y: auto; /* Włącz pionowe przewijanie */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Dodanie przewijania w przypadku przekroczenia treści */
+.portfolio-section.modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Włącz przewijanie w razie potrzeby */
+}
+
+#project1Modal .modal-dialog {
+    display: flex !important;
+    align-items: center !important; /* Wyśrodkowanie pionowe */
+    justify-content: center !important; /* Wyśrodkowanie poziome */
+    min-height: 100vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+    margin: auto !important; /* Zapewnia wyśrodkowanie */
+    position: relative; /* Umożliwia przesunięcie */
+    left: 0px !important; /* Przesunięcie modala w lewo o 200px */
+}
+
+#project2Modal .modal-dialog {
+    display: flex !important;
+    align-items: center !important; /* Wyśrodkowanie pionowe */
+    justify-content: center !important; /* Wyśrodkowanie poziome */
+    min-height: 100vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+    margin: auto !important; /* Zapewnia wyśrodkowanie */
+    position: relative; /* Umożliwia przesunięcie */
+    left: 0px !important; /* Przesunięcie modala w lewo o 200px */
+}
+
+#project3Modal .modal-dialog {
+    display: flex !important;
+    align-items: center !important; /* Wyśrodkowanie pionowe */
+    justify-content: center !important; /* Wyśrodkowanie poziome */
+    min-height: 100vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+    margin: auto !important; /* Zapewnia wyśrodkowanie */
+    position: relative; /* Umożliwia przesunięcie */
+    left: 0px !important; /* Przesunięcie modala w lewo o 200px */
+}
+
+@media (max-width: 768px) {
+    #project1Modal .modal-dialog {
+        display: flex !important;
+        align-items: center !important; /* Wyśrodkowanie pionowe */
+        justify-content: center !important; /* Wyśrodkowanie poziome */
+        min-height: 120vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+        margin: auto !important; /* Zapewnia wyśrodkowanie */
+        position: relative; /* Umożliwia przesunięcie */
+        top: 50px !important;
+        bottom: -50px !important;
+    }
+
+    #project2Modal .modal-dialog {
+        display: flex !important;
+        align-items: center !important; /* Wyśrodkowanie pionowe */
+        justify-content: center !important; /* Wyśrodkowanie poziome */
+        min-height: 120vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+        margin: auto !important; /* Zapewnia wyśrodkowanie */
+        position: relative; /* Umożliwia przesunięcie */
+        top: 50px !important;
+        bottom: -50px;
+    }
+
+    #project3Modal .modal-dialog {
+        display: flex !important;
+        align-items: center !important; /* Wyśrodkowanie pionowe */
+        justify-content: center !important; /* Wyśrodkowanie poziome */
+        min-height: 120vh !important; /* Ustawienie minimalnej wysokości na 100% widoku */
+        margin: auto !important; /* Zapewnia wyśrodkowanie */
+        position: relative; /* Umożliwia przesunięcie */
+        top: 50px !important;
+        bottom: -50px;
+    }
+
+}
+
+#imageModal .modal-body {
+    max-height: 80vh !important; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto !important; /* Włącz przewijanie pionowe */
+    text-align: center !important; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px !important; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#imageModal .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#imageModal .modal-dialog { 
+    border: none !important; /* Opcjonalnie: usuwa ramkę */
+    min-height: 100vh !important;
+    transition: all 2s ease !important;  /* Animacja zmiany rozmiaru */
+    margin: auto !important;  /* Wyśrodkowanie poziome */
+    display: flex !important;
+    align-items: center !important; /* Wyśrodkowanie pionowe */
+    justify-content: center !important; /* Wyśrodkowanie poziome */
+    position: relative !important; /* Umożliwia użycie właściwości top */
+    border-radius: 15px !important;
+    top: 0px !important;
+    left: 0px !important; 
+}
+
+#imageModal2 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#imageModal2 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#imageModal2 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#imageModal3 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#imageModal3 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#imageModal3 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project2ImageModal .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project2ImageModal .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project2ImageModal .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project2ImageModal2 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project2ImageModal2 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project2ImageModal2 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project2ImageModal3 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project2ImageModal3 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project2ImageModal3 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project3ImageModal .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project3ImageModal .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project3ImageModal .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project3ImageModal2 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project3ImageModal2 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project3ImageModal2 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#project3ImageModal3 .modal-body {
+    max-height: 80vh; /* Maksymalna wysokość ciała modala (80% wysokości widoku) */
+    overflow-y: auto; /* Włącz przewijanie pionowe */
+    text-align: center; /* Wyrównanie zawartości (opcjonalne, dla obrazka) */
+    padding: 16px; /* Odstępy wewnętrzne */
+}
+
+/* Ograniczenie wysokości i przewijanie dla całego modala */
+#project3ImageModal3 .modal-content {
+    max-height: 90vh; /* Maksymalna wysokość całego modala */
+    overflow-y: auto; /* Przewijanie w razie potrzeby */
+}
+
+#project3ImageModal3 .modal-dialog { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+#customerTestimonials {
+    position: relative !important;
+    right: -10px !important;
+}
+
+.neon-text {
+    color: #5c5f5c !important; /* Neonowa zieleń */
+    font-weight: bold !important;
+    padding: 10px;
+    border: 2px solid #5c5f5c; /* Zielona ramka */
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-height: 80vh; /* Maksymalna wysokość modala */
+        overflow-y: auto; /* Przewijanie w pionie */
+    }
+
+    .modal-content {
+        max-height: 100%; /* Dopasowanie zawartości do kontenera */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-body {
+        overflow-y: auto; /* Dodanie przewijania do treści */
+        flex-grow: 1; /* Pozwala na dynamiczne dopasowanie wysokości */
+        padding: 20px;
+    }
+
+    .modal-header,
+    .modal-footer {
+        flex-shrink: 0; /* Nagłówek i stopka pozostają statyczne */
+    }
+}
+
+.modal-dialog-1 { 
+    border: none; /* Opcjonalnie: usuwa ramkę */
+    max-width: 80%;  /* Domyślna szerokość modala */
+    max-height: 80%; /* Domyślna wysokość modala */
+    transition: all 2s ease;  /* Animacja zmiany rozmiaru */
+    margin: auto;  /* Wyśrodkowanie poziome */
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    position: relative; /* Umożliwia użycie właściwości top */
+    border-radius: 15px;
+    top: 25px;
+}
+
+.services-section .modal-dialog {
+    max-width: 85%;  /* Zmniejszenie szerokości modala na mniejszych ekranach */
+    max-height: 85%; /* Zmniejszenie wysokości modala */
+    border-radius: 10px; /* Zmniejszenie zaokrągleń */
+    
+    margin: auto; /* Wyśrodkowanie poziome */
+    display: flex; /* Flexbox do wyśrodkowania */
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    
+    position: fixed; /* Pozwala na precyzyjne wyśrodkowanie */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden; /* Ukrycie przewijania na poziomie modala */
+    padding: 10px;
+}
+
+#aboutModal1 .modal-body {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: center; /* Wyśrodkowanie pionowe */
+    height: 100%; /* Pełna wysokość modalu */
+    border-radius: 15px;
+    top: 8px;
+}
+
+/* Ustawienia dla obrazka w modalu */
+#aboutModal1 .modal-body img {
+    max-width: 85%;
+    max-height: 68vh;
+    object-fit: contain; /* Dopasowanie zdjęcia bez zniekształceń */
+}
+
+#aboutModal1 .modal-body img:hover {
+    transform: scale(1.20); /* Powiększenie obrazka */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Dodanie cienia */
+}
+
+.cta-section {
+    border-radius: 10px;
+    border: 2px solid #007bff; /* Ramka w kolorze Bootstrap primary */
+}
+
+.cta-section .btn-primary {
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-section .btn-primary:hover {
+    background-color: #0056b3; /* Ciemniejszy odcień niebieskiego przy najechaniu */
+    transform: scale(1.05); /* Lekka animacja powiększenia */
+}
+
+.cta-section img {
+    max-height: 400px;
+    object-fit: cover; /* Dostosowanie proporcji obrazka */
+}
+
+.bg-primary {
+    background-color: #ffe1e1 !important; /* Zmienia kolor tła na niebieski (lub inny wybrany kolor) */
+}
+
+.img-fluid {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Cień dla obrazka */
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Większy cień wokół ramki obrazka */
+}
+
+.card-text-1 {
+    font-size: 1.2rem; /* lub dostosuj do własnych potrzeb */
+    line-height: 1.6; /* Zwiększa odstępy między liniami dla lepszej czytelności */
+}
+
+.card-title-1 {
+    font-size: 1.8em; /* Powiększa tytuł w widoku desktopowym */
+    margin-bottom: 25px; /* Zwiększa odstęp pod tytułem */
+}
+
+@media (min-width: 992px) {
+    .card-text-1 {
+        font-size: 1.2rem; /* Zwiększona czcionka dla dużych ekranów */
+    }
+
+    .card-title-1 {
+        font-size: 1.8em; /* Powiększa tytuł w widoku desktopowym */
+        
+    }
+}
+
+.btn-large {
+    font-size: 1.25rem; /* Zwiększ rozmiar tekstu */
+    padding: 15px 30px; /* Zwiększ wewnętrzny odstęp */
+    border-radius: 8px; /* Opcjonalnie: zaokrąglij rogi */
+}
+
+/* Podstawowy styl dla komunikatów */
+.response {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: block; /* Upewnij się, że element jest wyświetlany */
+    visibility: visible; /* Zapewnij widoczność elementu */
+    opacity: 1; /* Sprawdź, czy element nie jest przezroczysty */
+    height: auto; /* Upewnij się, że element ma odpowiednią wysokość */
+    width: 100%; 
+}
+
+/* Styl dla komunikatu sukcesu */
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    background-color: #f8d7da; /* Czerwone tło dla błędu */
+    color: #721c24; /* Kolor tekstu dla błędu */
+    border: 1px solid #f5c6cb; /* Obramowanie dla błędu */
+    padding: 15px;
+    border-radius: 5px;
+    visibility: visible; /* Upewnij się, że element jest widoczny */
+    display: block; /* Upewnij się, że element jest wyświetlany */
+    opacity: 1; /* Upewnij się, że element nie jest przezroczysty */
+}
+
+.custom-footer {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    background-color: #2A3439; /* Ustawienie tła stopki na ciemnoszare */
+    color: #fff; /* Kolor tekstu w stopce */
+    text-align: center;
+    padding: 20px 0; /* Dodanie paddingu dla lepszego wyglądu */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Efekt hover dla linków w stopce */
+.footer a {
+    color: #f39c12; /* Domyślny kolor linków */
+    transition: color 3s ease; /* Płynna zmiana koloru linków */
+}
+
+.footer a:hover {
+    color: #e74c3c; /* Kolor linków przy hoverze */
+}
+
+/* Efekt hover dla nagłówków w stopce */
+.footer h2 {
+    color: #fff; /* Domyślny kolor nagłówków */
+    transition: color 3s ease; /* Płynna zmiana koloru nagłówków */
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.5em;
+}
+
+.footer h2:hover {
+    color: #e74c3c;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Ustawienie sekcji w kolumnie dla lepszego dostosowania */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-section h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    font-family: 'Nunito', sans-serif; /* Czcionka dla paragrafów w sekcji stopki */
+}
+
+.centered-paragraph {
+    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
+    margin: 0 auto;     /* Wyśrodkowanie bloku (jeśli ma szerokość) */
+    width: 90%;         /* Opcjonalnie: ustaw szerokość akapitu, aby go wyśrodkować jako blok */
+}
+
+/* Dodatkowe style dla sekcji i formularzy */
+section {
+    padding: 60px 0; /* Dodanie paddingu dla wszystkich sekcji */
+}
+
+form {
+    max-width: 600px; /* Maksymalna szerokość formularza */
+    margin: 0 auto; /* Wyśrodkowanie formularza */
+}
+
+.navbar-custom .nav-link {
+    text-decoration: none; /* Usuwa podkreślenie z linków */
+    color: #007bff; /* Kolor linków */
+}
+
+.shadow-image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dodaje delikatny cień */
+    transition: box-shadow 1.5s ease-in-out;   /* Animacja przy zmianie cienia */
+}
+
+.shadow-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Intensywniejszy cień po najechaniu */
+}
+
+.rounded-image {
+    border-radius: 15px; /* Dodaje zaokrąglone rogi */
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 16.66%; /* 6 obrazków w jednym rzędzie */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 20px; /* Odstęp na separator pionowy */
+}
+
+.grid-item:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 1px;
+    background-color: #ddd; /* Separator pionowy */
+}
+
+
+
+@media (max-width: 768px) {
+
+    form {
+        max-width: 90%; /* Szerokość formularza dostosowana do tabletów */
+        padding: 15px; /* Mniejsze paddingi dla tabletów */
+    }
+
+    .card {
+        max-width: 90%;
+        margin-bottom: 15px; /* Mniejsze marginesy dla tabletów */
+        justify-content: center; 
+        align-items: center;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .justify-text {
+        text-align: justify; /* Wyjustowanie tekstu */
+        margin: 0 auto; /* Wyśrodkowanie bloku tekstu */
+        max-width: 90%;
+    }
+
+    .footer .social-buttons a {
+        margin-right: 10px; /* Odstępy między przyciskami w sekcji social media */
+    }
+
+    .modal-dialog {
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto; /* Wyśrodkuje w pionie i poziomie */
+        top: 0%;
+        left: 10%;
+        right: 10%;
+        position: absolute; /* Pozycjonowanie absolutne dla centrowania */
+    }
+    
+    .modal-content {
+        border-radius: 8px; /* Mniejsze zaokrąglenie rogów na mniejszych ekranach */
+    }
+    
+    .modal-body {
+        height: auto;
+        padding: 15px;
+    }
+    
+    .full-resolution-image {
+        max-width: 100%;
+        max-height: 80vh; /* Maksymalna wysokość obrazka dostosowana do widoku telefonu */
+    }
+
+    .row {
+        gap: 2rem;
+    }
+
+    .portfolio-section .modal-dialog {
+        max-width: 85%;  /* Zmniejszenie szerokości modala na mniejszych ekranach */
+        max-height: 85%; /* Zmniejszenie wysokości modala */
+        border-radius: 10px; /* Zmniejszenie zaokrągleń */
+        
+        margin: auto; /* Wyśrodkowanie poziome */
+        display: flex; /* Flexbox do wyśrodkowania */
+        align-items: center; /* Wyśrodkowanie pionowe */
+        justify-content: center; /* Wyśrodkowanie poziome */
+        
+        position: fixed; /* Pozwala na precyzyjne wyśrodkowanie */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        overflow: hidden; /* Ukrycie przewijania na poziomie modala */
+        padding: 10px;
+    }
+
+    /* Umożliwienie przewijania zawartości modala */
+    .portfolio-section .modal-content {
+        max-height: 100%; /* Zajmuje pełną wysokość modala */
+        overflow-y: auto; /* Umożliwia pionowe przewijanie */
+        padding: 15px; /* Opcjonalny margines wewnętrzny */
+    }
+
+    .portfolio-section .carousel-inner {
+        padding: 15px; /* Możesz zmniejszyć padding na mniejszych ekranach */
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Mniejszy cień dla mniejszych ekranów */
+        border-radius: 8px;
+        width: 90%; /* Ustaw szerokość na 90% */
+        max-width: 100%; /* Dostosowanie do mniejszych ekranów */
+        margin: 0 auto; /* Wyśrodkowanie poziome */
+    }
+
+    .services-section .modal-dialog {
+        max-width: 85%;  /* Zmniejszenie szerokości modala na mniejszych ekranach */
+        max-height: 85%; /* Zmniejszenie wysokości modala */
+        border-radius: 10px; /* Zmniejszenie zaokrągleń */
+        
+        margin: auto; /* Wyśrodkowanie poziome */
+        display: flex; /* Flexbox do wyśrodkowania */
+        align-items: center; /* Wyśrodkowanie pionowe */
+        justify-content: center; /* Wyśrodkowanie poziome */
+        
+        position: fixed; /* Pozwala na precyzyjne wyśrodkowanie */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        overflow: hidden; /* Ukrycie przewijania na poziomie modala */
+        padding: 10px;
+    }
+
+    /* Umożliwienie przewijania zawartości modala */
+    .services-section .modal-content {
+        max-height: 100%; /* Zajmuje pełną wysokość modala */
+        overflow-y: auto; /* Umożliwia pionowe przewijanie */
+        padding: 15px; /* Opcjonalny margines wewnętrzny */
+    }
+
+    .services-section .carousel-inner {
+        padding: 15px; /* Możesz zmniejszyć padding na mniejszych ekranach */
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Mniejszy cień dla mniejszych ekranów */
+        border-radius: 8px;
+        width: 90%; /* Ustaw szerokość na 90% */
+        max-width: 100%; /* Dostosowanie do mniejszych ekranów */
+        margin: 0 auto; /* Wyśrodkowanie poziome */
+    }
+
+    .grid-container {
+        flex-wrap: wrap;
+    }
+
+    .grid-item {
+        width: 33.33%; /* 3 obrazki w jednym rzędzie */
+        padding-left: 20px; /* Odstęp na separator pionowy */
+        padding-top: 20px; /* Odstęp na separator poziomy */
+    }
+
+    /* Separator pionowy dla wszystkich obrazków oprócz pierwszych w rzędzie */
+    .grid-item:not(:nth-child(3n+1))::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px;
+        width: 1px;
+        background-color: #ddd; /* Separator pionowy */
+    }
+
+    /* Separator poziomy dla obrazków w drugim rzędzie */
+    .grid-item:nth-child(n+4)::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 1px;
+        background-color: #ddd; /* Separator poziomy */
+    }
+
+}
